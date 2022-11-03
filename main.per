@@ -1,0 +1,138 @@
+SCHEMA hrmdb
+ACTION DEFAULTS
+action exit(TEXT="exit",IMAGE="exit") 
+END
+
+LAYOUT
+VBOX #1
+HBOX #1
+
+VBOX #2
+GRID
+{
+ ["                        "][ label2     ]
+ ["                        "]["          "]
+ ["                        "][amenity_img ]
+ ["                        "]["          "]
+ ["                        "][amenity     ]
+
+}
+END 
+END #vbox2
+
+VBOX #3
+GRID 
+{
+ ["                        "][ label3       ]
+ ["                        "]["            "]
+ ["                        "][apartment_img ]
+ ["                        "]["            "]
+ ["                        "][apartment     ]
+} 
+END 
+END #vbox3
+
+VBOX #4
+GRID 
+{
+ ["                        "][ label4         ]
+ ["                        "]["              "]
+ ["                        "][association_img ]
+ ["                        "]["              "]
+ ["                        "][association     ]
+} 
+END #grid4
+END #vbox4
+
+VBOX #5
+GRID 
+{
+ ["                        "][ label5         ]
+ ["                        "]["              "]
+ ["                        "][helpdesk_img    ]
+ ["                        "]["              "]
+ ["                        "][helpdesk        ]
+}
+END #grid5
+END #hbox1
+END #vbox5
+
+HBOX #hbox2
+VBOX #6
+GRID 
+{
+ ["                        "][ label6         ]
+ ["                        "]["              "]
+ ["                        "][payment_img     ]
+ ["                        "]["              "]
+ ["                        "][payment         ]
+}
+END #grid
+END #vbox6
+
+VBOX #7
+GRID 
+{
+ ["                        "][ label7         ]
+ ["                        "]["              "]
+ ["                        "][owner_img       ]
+ ["                        "]["              "]
+ ["                        "][owner           ]
+}
+END #vbox7
+END #grid7
+
+VBOX #8
+GRID 
+{
+ ["                        "][ label8         ]
+ ["                        "]["              "]
+ ["                        "][tanent_img      ]
+ ["                        "]["              "]
+ ["                        "][tanent          ]
+}
+END #vbox8
+END #grid8
+
+VBOX #9
+GRID 
+{
+ ["                        "][ label9         ]
+ ["                        "]["              "]
+ ["                        "][trans_img       ]
+ ["                        "]["              "]
+ ["                        "][transaction     ]
+}
+END#grid9 
+END #vbox9
+END #hbox2
+END #layout
+
+TABLES Amenity,Apartment,Association,helpdesk,owner,Payment
+END 
+ATTRIBUTES 
+LABEL label2:label2, TEXT ="AMENITY";
+IMAGE amenity_img:amenity_img, IMAGE ="amenity";
+BUTTON amenity:amenity,COMMENT ="click on amenity",STYLE ="amenity",TEXT ="AMENITY";
+LABEL label3:label3, TEXT ="APARTMENT DETAILS";
+IMAGE apartment_img:apartment_img, IMAGE ="apartment.jpg";
+BUTTON apartment:apartment,COMMENT ="click on apartment",STYLE ="apartment",TEXT ="APARTMENT";
+LABEL label4:label4, TEXT ="ASSOCIATION DETAILS";
+IMAGE association_img:association_img, IMAGE ="association.jpg";
+BUTTON association:association,COMMENT ="click on association",STYLE ="association",TEXT ="ASSOCIATION";
+LABEL label5:label5, TEXT = "WELOCME TO HELPDESK";
+IMAGE helpdesk_img:helpdek_img, IMAGE ="helpdesk.png";
+BUTTON helpdesk:helpdesk,COMMENT ="click on helpdesk",STYLE ="helpdesk",TEXT ="HELP DESK";
+LABEL label6:label6, TEXT ="PAYMENT";
+IMAGE payment_img:payment_img, IMAGE ="payment.jpg";
+BUTTON payment:payment,COMMENT ="click on payment",STYLE ="payment",TEXT ="PAYMENT DETAILS";
+LABEL label7:label7, TEXT ="OWNER DETAILS";
+IMAGE owner_img:owner_img, IMAGE ="owner.jpg";
+BUTTON owner:owner,COMMENT ="click on owner",STYLE ="owner",TEXT ="OWNER";
+LABEL label8:label8, TEXT ="TANENT DETAILS";
+IMAGE tanent_img:tanent_img, IMAGE ="tanent.jpg";
+BUTTON tanent:tanent,COMMENT ="click on tanent",STYLE ="tanent",TEXT ="TANENT";
+LABEL label9:label9, TEXT ="TRANSACTION DETAILS";
+IMAGE trans_img:trans_img, IMAGE ="transcation.jpg";
+BUTTON transaction:transaction,COMMENT ="click on transaction",STYLE ="transaction",TEXT  ="TRANSACTION";
+END 

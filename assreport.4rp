@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report:Report xmlns:rtl="http://www.4js.com/2004/RTL" xmlns:report="http://www.4js.com/2007/REPORT" xmlns="http://www.4js.com/2004/PXML" gstVersion="31408" version="6.00">
+    <report:Settings RWPageWidth="a4width" RWPageLength="a4length" RWLeftMargin="1.3cm" RWTopMargin="1.3cm" RWRightMargin="1.3cm" RWBottomMargin="1.3cm">
+        <report:FormatList>
+            <report:Format-SVG/>
+            <report:Format-PDF/>
+            <report:Format-image/>
+        </report:FormatList>
+    </report:Settings>
+    <report:Data RWDataLocation="association.rdd" RWFglReportName="asreport"/>
+    <report:Conflicts/>
+    <rtl:stylesheet>
+        <PXML>
+            <rtl:match name="Report" nameConstraint="Report" minOccurs="1" maxOccurs="1">
+                <MINIPAGE name="Page Root" width="max" length="max" bgColor="#ffff7f" fontBold="true">
+                    <LAYOUTNODE name="Page Header" width="max" length="min" port="anyPageHeader">
+                        <MINIPAGE name="StripeLayouter3" width="min" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Report Title" x="0" y="max/2" anchorX="0" anchorY="0.5" alignment="baseline" bgColor="#55aaff" fontSize="25" fontItalic="true" baselineType="leftleft" floatingBehavior="enclosed" text="ASSOCIATION REPORT"/>
+                            <PAGENOBOX name="PageNoBox" x="1.23857" y="max" anchorX="0" anchorY="1" alignment="baseline" baselineType="leftleft" floatingBehavior="enclosed" textAlignment="right"/>
+                            <IMAGEBOX name="ImageBox" x="3.3417" y="21.4804" width="20.4" length="20.4" anchorX="0" anchorY="0" floatingBehavior="enclosed" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" intendedResolution="120"/>
+                            <IMAGEBOX name="ImageBox1" x="3.3417" y="457.467" width="19.375" length="19.375" anchorX="0" anchorY="0" floatingBehavior="enclosed" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" intendedResolution="120"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Table Header" class="grwTableHeader" width="45.6" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <WORDBOX name="printi2genrec.association_name Title" class="grwTableStringColumnTitle" x="24.6122" y="6.9257" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Association Name" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.position Title" class="grwTableStringColumnTitle" x="24.6122" y="138.998" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Position" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.responsbility Title" class="grwTableStringColumnTitle" x="24.6122" y="260.787" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Responsbility" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.unit_number Title" class="grwTableNumericColumnTitle" x="24.6122" y="423.88" anchorX="0" anchorY="0" floatingBehavior="enclosed" textAlignment="right" text="Unit Number" localizeText="true"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Separator" width="1" length="max" bgColor="#000000" layoutDirection="leftToRight"/>
+                    </LAYOUTNODE>
+                    <rtl:match name="OnEveryRow" nameConstraint="OnEveryRow" minOccurs="0" maxOccurs="unbounded">
+                        <MINIPAGE name="Table Row" class="grwTableRow" width="52.2" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer_1" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <rtl:input-variable name="printi2genrec.association_name" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.association_name Value" class="grwStringValue" x="8.6664" y="6.9257" width="92.4" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.association_name}}"/>
+                            <rtl:input-variable name="printi2genrec.position" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.position Value" class="grwStringValue" x="8.6664" y="138.998" width="69" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.position}}"/>
+                            <rtl:input-variable name="printi2genrec.responsbility" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.responsbility Value" class="grwStringValue" x="8.6664" y="260.787" width="143.4" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.responsbility}}"/>
+                            <rtl:input-variable name="printi2genrec.unit_number" type="FGLNumeric" expectedLocation="expectedHere"/>
+                            <DECIMALFORMATBOX name="printi2genrec.unit_number Value" class="grwNumericValue" x="8.6664" y="477.172" width="50.4" anchorX="0" anchorY="1" floatingBehavior="enclosed" textAlignment="right" format="----------#" value="{{printi2genrec.unit_number}}"/>
+                        </MINIPAGE>
+                    </rtl:match>
+                </MINIPAGE>
+            </rtl:match>
+        </PXML>
+    </rtl:stylesheet>
+</report:Report>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?PxmlLayouter  pageWidth="a4width" pageHeight="a4length" topMargin="1.3cm" leftMargin="1.3cm" rightMargin="1.3cm" bottomMargin="1.3cm" markOverfullBoxesInDocument="true"?>
+<?PdfWriterStyleSheet  antialiasFonts="true" antialiasShapes="true" monochrome="false" encodeImagesAsJPEG="0" jpegQuality="1.0" writeToFile="C:/Users/PMOHAN~1/AppData/Local/Temp/58595FA9-5DE2-48B7-BB28-6A097F2C3C31.pdf"?>
+<PXML xmlns="http://www.4js.com/2004/PXML">
+    <MINIPAGE fontBold="true" length="max" name="Page Root" width="max">
+        <LAYOUTNODE length="min" name="Page Header" port="anyPageHeader" width="max">
+            <MINIPAGE layoutDirection="leftToRight" length="max" name="StripeLayouter3" width="min">
+                <WORDBOX alignment="baseline" anchorX="0" anchorY="0.5" baselineType="leftleft" floatingBehavior="enclosed" fontItalic="true" fontSize="25" name="Report Title" text="AMENITY DETAILS" x="0" y="max/2"/>
+                <PAGENOBOX alignment="baseline" anchorX="0" anchorY="1" baselineType="leftleft" floatingBehavior="enclosed" name="PageNoBox" textAlignment="right" x="1.23857" y="max"/>
+                <IMAGEBOX anchorX="0" anchorY="0" floatingBehavior="enclosed" intendedResolution="120" length="17.4" name="ImageBox" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" width="17.4" x="4.3304" y="15.0641"/>
+                <IMAGEBOX anchorX="0" anchorY="0" floatingBehavior="enclosed" intendedResolution="120" length="18" name="ImageBox1" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" width="18" x="4.3304" y="468.737"/>
+            </MINIPAGE>
+            <MINIPAGE alignment="near" class="grwTableHeader" layoutDirection="leftToRight" length="max" name="Table Header" width="68.4">
+                <WORDBOX alignment="baseline" baselineType="leftleft" name="Spacer" port="itemSeparator" text=" "/>
+                <WORDBOX anchorX="0" anchorY="0" class="grwTableStringColumnTitle" floatingBehavior="enclosed" localizeText="true" name="printi2genrec.amenity_name Title" text="Amenity Name" x="49.1286" y="5.1551"/>
+                <WORDBOX anchorX="0" anchorY="0" class="grwTableStringColumnTitle" floatingBehavior="enclosed" localizeText="true" name="printi2genrec.booked_by Title" text="Booked By" x="49.1286" y="109.581"/>
+                <WORDBOX anchorX="0" anchorY="0" class="grwTableNumericColumnTitle" floatingBehavior="enclosed" localizeText="true" name="printi2genrec.charges Title" text="Charges" textAlignment="right" x="50.0222" y="225.641"/>
+                <WORDBOX anchorX="0" anchorY="0" class="grwTableDatetimeColumnTitle" floatingBehavior="enclosed" localizeText="true" name="printi2genrec.on_date Title" text="On Date" x="49.1286" y="327.957"/>
+                <WORDBOX anchorX="0" anchorY="0" class="grwTableStringColumnTitle" floatingBehavior="enclosed" localizeText="true" name="printi2genrec.owner_type Title" text="Owner Type" x="49.1286" y="415.111"/>
+            </MINIPAGE>
+            <MINIPAGE bgColor="#000000" layoutDirection="leftToRight" length="max" name="Separator" width="1"/>
+        </LAYOUTNODE>
+        <MINIPAGE alignment="near" class="grwTableRow" layoutDirection="leftToRight" length="max" name="Table Row" width="66.6">
+            <WORDBOX alignment="baseline" baselineType="leftleft" name="Spacer_1" port="itemSeparator" text=" "/>
+            <WORDWRAPBOX anchorX="0" anchorY="0" class="grwTableStringColumnValue" floatingBehavior="enclosed" name="printi2genrec.amenity_name Value" text="anon" width="96" x="16.3116" y="5.15511"/>
+            <WORDWRAPBOX anchorX="0" anchorY="0" class="grwTableStringColumnValue" floatingBehavior="enclosed" name="printi2genrec.booked_by Value" text="mohan" width="81" x="16.3116" y="109.581"/>
+            <DECIMALFORMATBOX anchorX="0" anchorY="1" class="grwTableNumericColumnValue" floatingBehavior="enclosed" format="----------#" name="printi2genrec.charges Value" textAlignment="right" value="560" width="27.2" x="18.2997" y="260.787"/>
+            <DATEFORMATBOX anchorX="0" anchorY="0" class="grwTableDateColumnValue" floatingBehavior="enclosed" name="printi2genrec.on_date Value" value="2021-07-07 00:00:00.00000" x="16.3116" y="327.957"/>
+            <WORDWRAPBOX anchorX="0" anchorY="0" class="grwTableStringColumnValue" floatingBehavior="enclosed" name="printi2genrec.owner_type Value" text="private" width="78" x="16.3116" y="415.111"/>
+        </MINIPAGE>
+        <MINIPAGE alignment="near" class="grwTableRow" layoutDirection="leftToRight" length="max" name="Table Row" width="66.6">
+            <WORDBOX alignment="baseline" baselineType="leftleft" name="Spacer_1" port="itemSeparator" text=" "/>
+            <WORDWRAPBOX anchorX="0" anchorY="0" class="grwTableStringColumnValue" floatingBehavior="enclosed" name="printi2genrec.amenity_name Value" text="doge" width="96" x="16.3116" y="5.15511"/>
+            <WORDWRAPBOX anchorX="0" anchorY="0" class="grwTableStringColumnValue" floatingBehavior="enclosed" name="printi2genrec.booked_by Value" text="akhil" width="81" x="16.3116" y="109.581"/>
+            <DECIMALFORMATBOX anchorX="0" anchorY="1" class="grwTableNumericColumnValue" floatingBehavior="enclosed" format="----------#" name="printi2genrec.charges Value" textAlignment="right" value="700" width="27.2" x="18.2997" y="260.787"/>
+            <DATEFORMATBOX anchorX="0" anchorY="0" class="grwTableDateColumnValue" floatingBehavior="enclosed" name="printi2genrec.on_date Value" value="2021-08-05 00:00:00.00000" x="16.3116" y="327.957"/>
+            <WORDWRAPBOX anchorX="0" anchorY="0" class="grwTableStringColumnValue" floatingBehavior="enclosed" name="printi2genrec.owner_type Value" text="public" width="78" x="16.3116" y="415.111"/>
+        </MINIPAGE>
+    </MINIPAGE>
+</PXML>

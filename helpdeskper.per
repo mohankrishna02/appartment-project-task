@@ -1,0 +1,45 @@
+SCHEMA hrmdb
+TOOLBAR 
+ITEM find(IMAGE="find",TEXT=%"find")
+ITEM next (IMAGE="next",TEXT=%"next")
+ITEM previous (IMAGE="previous",TEXT=%"previous")
+ITEM accept(IMAGE="accept",TEXT=%"accept")
+ITEM cancel(IMAGE="cancel",TEXT=%"cancel")
+ITEM quit(IMAGE="quit",TEXT=%"quit")
+ITEM add(IMAGE="add",TEXT=%"add")
+ITEM update(IMAGE ="update",TEXT =%"update")
+ITEM delete(IMAGE ="delete",TEXT =%"delete")
+END
+ 
+LAYOUT
+GRID 
+{
+ <g                                           ><g                                   >
+ [a4                                         ]   [image4                           ]
+  ATTENDED BY      :[f01                     ]   [                                 ]
+  COMPLAINT BY     :[f02                     ]   [                                 ]
+  COMPLETED BY     :[f03                     ]   [                                 ]
+  ISSUE            :[f04                     ]   [                                 ]
+  ISSUE DATE       :[f05                     ]   [                                 ]
+  STATUS           :[f06                     ]   [                                 ]
+  UNIT NUMBER      :[f07                     ]   [                                 ]
+ <                                            ><                                    >
+}
+END 
+END 
+
+TABLES helpdesk
+END
+ 
+ATTRIBUTES 
+LABEL a4:a4, TEXT = "HELP DESK";
+IMAGE image4:image4, IMAGE = "helpdesk.png";
+EDIT f01 = helpdesk.Attended_by, COMMENTS = "ENTER ATTENDED BY", PLACEHOLDER = "ENTER ATTENDED BY";
+EDIT f02 = helpdesk.Complaint_by, COMMENTS = "ENTER POSOTION", PLACEHOLDER = "ENTER COMPLAINT BY";
+EDIT f03 = helpdesk.Completed_by, COMMENTS = "ENTER COMPLETED BY", PLACEHOLDER = "ENTER COMPLETED BY";
+EDIT f04 = helpdesk.Issue, COMMENTS = "ENTER ISSUE", PLACEHOLDER = "ENTER ISSUE";
+DATEEDIT f05 = helpdesk.Issue_date;
+EDIT f06 = helpdesk.Status, COMMENTS = "ENTER STATUS", PLACEHOLDER ="ENTER STATUS";
+EDIT f07 = helpdesk.Unit_number,COMMENTS = "ENTER UNIT NUMBER", PLACEHOLDER = "ENTER UNIT NUMBER";
+END 
+

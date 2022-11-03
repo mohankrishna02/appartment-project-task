@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report:Report xmlns:rtl="http://www.4js.com/2004/RTL" xmlns:report="http://www.4js.com/2007/REPORT" xmlns="http://www.4js.com/2004/PXML" gstVersion="31408" version="6.00">
+    <report:Settings RWPageWidth="a4width" RWPageLength="a4length" RWLeftMargin="1.3cm" RWTopMargin="1.3cm" RWRightMargin="1.3cm" RWBottomMargin="1.3cm">
+        <report:FormatList>
+            <report:Format-SVG/>
+            <report:Format-PDF/>
+            <report:Format-image/>
+        </report:FormatList>
+    </report:Settings>
+    <report:Data RWDataLocation="amenity.rdd" RWFglReportName="amreport"/>
+    <report:Conflicts/>
+    <rtl:stylesheet>
+        <PXML>
+            <rtl:match name="Report" nameConstraint="Report" minOccurs="1" maxOccurs="1">
+                <MINIPAGE name="Page Root" width="max" length="max" fontBold="true">
+                    <LAYOUTNODE name="Page Header" width="max" length="min" port="anyPageHeader">
+                        <MINIPAGE name="StripeLayouter3" width="min" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Report Title" x="0" y="max/2" anchorX="0" anchorY="0.5" alignment="baseline" fontSize="25" fontItalic="true" baselineType="leftleft" floatingBehavior="enclosed" text="AMENITY DETAILS"/>
+                            <PAGENOBOX name="PageNoBox" x="1.23857" y="max" anchorX="0" anchorY="1" alignment="baseline" baselineType="leftleft" floatingBehavior="enclosed" textAlignment="right"/>
+                            <IMAGEBOX name="ImageBox" x="4.3304" y="15.0641" width="17.4" length="17.4" anchorX="0" anchorY="0" floatingBehavior="enclosed" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" intendedResolution="120"/>
+                            <IMAGEBOX name="ImageBox1" x="4.3304" y="468.737" width="18" length="18" anchorX="0" anchorY="0" floatingBehavior="enclosed" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" intendedResolution="120"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Table Header" class="grwTableHeader" width="68.4" length="max" alignment="near" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <WORDBOX name="printi2genrec.amenity_name Title" class="grwTableStringColumnTitle" x="49.1286" y="5.1551" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Amenity Name" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.booked_by Title" class="grwTableStringColumnTitle" x="49.1286" y="109.581" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Booked By" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.charges Title" class="grwTableNumericColumnTitle" x="50.0222" y="225.641" anchorX="0" anchorY="0" floatingBehavior="enclosed" textAlignment="right" text="Charges" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.on_date Title" class="grwTableDatetimeColumnTitle" x="49.1286" y="327.957" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="On Date" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.owner_type Title" class="grwTableStringColumnTitle" x="49.1286" y="415.111" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Owner Type" localizeText="true"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Separator" width="1" length="max" bgColor="#000000" layoutDirection="leftToRight"/>
+                    </LAYOUTNODE>
+                    <rtl:match name="OnEveryRow" nameConstraint="OnEveryRow" minOccurs="0" maxOccurs="unbounded">
+                        <MINIPAGE name="Table Row" class="grwTableRow" width="66.6" length="max" alignment="near" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer_1" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <rtl:input-variable name="printi2genrec.amenity_name" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.amenity_name Value" class="grwTableStringColumnValue" x="16.3116" y="5.15511" width="96" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.amenity_name}}"/>
+                            <rtl:input-variable name="printi2genrec.booked_by" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.booked_by Value" class="grwTableStringColumnValue" x="16.3116" y="109.581" width="81" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.booked_by}}"/>
+                            <rtl:input-variable name="printi2genrec.charges" type="FGLNumeric" expectedLocation="expectedHere"/>
+                            <DECIMALFORMATBOX name="printi2genrec.charges Value" class="grwTableNumericColumnValue" x="18.2997" y="260.787" width="27.2" anchorX="0" anchorY="1" floatingBehavior="enclosed" textAlignment="right" format="----------#" value="{{printi2genrec.charges}}"/>
+                            <rtl:input-variable name="printi2genrec.on_date" type="FGLString" expectedLocation="expectedHere"/>
+                            <DATEFORMATBOX name="printi2genrec.on_date Value" class="grwTableDateColumnValue" x="16.3116" y="327.957" anchorX="0" anchorY="0" floatingBehavior="enclosed" value="{{Date.fromIsoValue(printi2genrec.on_date.isoValue)}}"/>
+                            <rtl:input-variable name="printi2genrec.owner_type" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.owner_type Value" class="grwTableStringColumnValue" x="16.3116" y="415.111" width="78" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.owner_type}}"/>
+                        </MINIPAGE>
+                    </rtl:match>
+                </MINIPAGE>
+            </rtl:match>
+        </PXML>
+    </rtl:stylesheet>
+</report:Report>

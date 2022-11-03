@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report:Report xmlns:rtl="http://www.4js.com/2004/RTL" xmlns:report="http://www.4js.com/2007/REPORT" xmlns="http://www.4js.com/2004/PXML" gstVersion="31408" version="6.00">
+    <report:Settings RWPageWidth="a4width" RWPageLength="a4length" RWLeftMargin="1.3cm" RWTopMargin="1.3cm" RWRightMargin="1.3cm" RWBottomMargin="1.3cm">
+        <report:FormatList>
+            <report:Format-SVG/>
+            <report:Format-PDF/>
+            <report:Format-image/>
+        </report:FormatList>
+    </report:Settings>
+    <report:Data RWDataLocation="owner.rdd" RWFglReportName="owreport"/>
+    <report:Conflicts/>
+    <rtl:stylesheet>
+        <PXML>
+            <rtl:match name="Report" nameConstraint="Report" minOccurs="1" maxOccurs="1">
+                <MINIPAGE name="Page Root" width="max" length="max" bgColor="#aaffff" fontBold="true">
+                    <LAYOUTNODE name="Page Header" width="max" length="min" port="anyPageHeader">
+                        <MINIPAGE name="StripeLayouter3" width="min" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Report Title" x="1.2386" y="max*0.4998" anchorX="0" anchorY="0.5" alignment="baseline" bgColor="#aaaa00" fontSize="25" fontItalic="true" baselineType="leftleft" floatingBehavior="enclosed" text="OWNER DETAILS"/>
+                            <PAGENOBOX name="PageNoBox" x="1.23857" y="max" anchorX="0" anchorY="1" alignment="baseline" baselineType="leftleft" floatingBehavior="enclosed" textAlignment="right"/>
+                            <IMAGEBOX name="ImageBox" x="4.7589" y="29.1067" width="20.4" length="20.4" anchorX="0" anchorY="0" floatingBehavior="enclosed" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" intendedResolution="120"/>
+                            <IMAGEBOX name="ImageBox1" x="4.7589" y="447.383" width="20.4" length="20.4" anchorX="0" anchorY="0" floatingBehavior="enclosed" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" intendedResolution="120"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Table Header" class="grwTableHeader" width="58.2" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <WORDBOX name="printi2genrec.owner_name Title" class="grwTableStringColumnTitle" x="31.7325" y="8.5093" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Owner Name" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.unit_number Title" class="grwTableNumericColumnTitle" x="31.7325" y="122.237" anchorX="0" anchorY="0" floatingBehavior="enclosed" textAlignment="right" text="Unit Number" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.address Title" class="grwTableStringColumnTitle" x="37.0503" y="252.028" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Address" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.purchased_on Title" class="grwTableDatetimeColumnTitle" x="31.7325" y="392.471" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Purchased On" localizeText="true"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Separator" width="1" length="max" bgColor="#000000" layoutDirection="leftToRight"/>
+                    </LAYOUTNODE>
+                    <rtl:match name="OnEveryRow" nameConstraint="OnEveryRow" minOccurs="0" maxOccurs="unbounded">
+                        <MINIPAGE name="Table Row" class="grwTableRow" width="58.8" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer_1" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <rtl:input-variable name="printi2genrec.owner_name" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.owner_name Value" class="grwStringValue" x="5.3941" y="8.5093" width="90" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.owner_name}}"/>
+                            <rtl:input-variable name="printi2genrec.unit_number" type="FGLNumeric" expectedLocation="expectedHere"/>
+                            <DECIMALFORMATBOX name="printi2genrec.unit_number Value" class="grwNumericValue" x="8.1408" y="166.067" width="42.6" anchorX="0" anchorY="1" floatingBehavior="enclosed" textAlignment="right" format="----------#" value="{{printi2genrec.unit_number}}"/>
+                            <rtl:input-variable name="printi2genrec.address" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.address Value" class="grwStringValue" x="8.1408" y="256.803" width="85.2" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.address}}"/>
+                            <rtl:input-variable name="printi2genrec.purchased_on" type="FGLString" expectedLocation="expectedHere"/>
+                            <DATEFORMATBOX name="printi2genrec.purchased_on Value" class="grwDateValue" x="5.3941" y="392.471" anchorX="0" anchorY="0" floatingBehavior="enclosed" value="{{Date.fromIsoValue(printi2genrec.purchased_on.isoValue)}}"/>
+                        </MINIPAGE>
+                    </rtl:match>
+                </MINIPAGE>
+            </rtl:match>
+        </PXML>
+    </rtl:stylesheet>
+</report:Report>

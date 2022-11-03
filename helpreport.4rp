@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report:Report xmlns:rtl="http://www.4js.com/2004/RTL" xmlns:report="http://www.4js.com/2007/REPORT" xmlns="http://www.4js.com/2004/PXML" gstVersion="31408" version="6.00">
+    <report:Settings RWPageWidth="a4width" RWPageLength="a4length" RWLeftMargin="1.3cm" RWTopMargin="1.3cm" RWRightMargin="1.3cm" RWBottomMargin="1.3cm">
+        <report:FormatList>
+            <report:Format-SVG/>
+            <report:Format-PDF/>
+            <report:Format-image/>
+        </report:FormatList>
+    </report:Settings>
+    <report:Data RWDataLocation="helpdesk.rdd" RWFglReportName="hpreport"/>
+    <report:Conflicts/>
+    <rtl:stylesheet>
+        <PXML>
+            <rtl:match name="Report" nameConstraint="Report" minOccurs="1" maxOccurs="1">
+                <MINIPAGE name="Page Root" width="max" length="max" bgColor="#55ff7f" fontBold="true">
+                    <LAYOUTNODE name="Page Header" width="max" length="min" port="anyPageHeader">
+                        <MINIPAGE name="StripeLayouter3" width="min" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Report Title" x="1.2386" y="max*0.5011" anchorX="0" anchorY="0.5" alignment="baseline" color="#ffffff" bgColor="#000000" fontSize="25" fontItalic="true" baselineType="leftleft" floatingBehavior="enclosed" text="HELP DESK DETAILS"/>
+                            <PAGENOBOX name="PageNoBox" x="1.23857" y="max" anchorX="0" anchorY="1" alignment="baseline" baselineType="leftleft" floatingBehavior="enclosed" textAlignment="right"/>
+                            <IMAGEBOX name="ImageBox" x="2.3858" y="22.6043" width="21.6" length="21.6" anchorX="0" anchorY="0" floatingBehavior="enclosed" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" intendedResolution="120"/>
+                            <IMAGEBOX name="ImageBox1" x="2.3858" y="459.792" width="22.2" length="22.2" anchorX="0" anchorY="0" floatingBehavior="enclosed" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" intendedResolution="120"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Table Header" class="grwTableHeader" width="52.8" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <WORDBOX name="printi2genrec.attended_by Title" class="grwTableStringColumnTitle" x="32.9356" y="11.0414" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Attended By" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.complaint_by Title" class="grwTableStringColumnTitle" x="32.9356" y="137.838" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Complaint By" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.completed_by Title" class="grwTableStringColumnTitle" x="32.9356" y="265.308" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Completed By" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.issue Title" class="grwTableStringColumnTitle" x="33.8309" y="405.384" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Issue" localizeText="true"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Separator" width="1" length="max" bgColor="#000000" layoutDirection="leftToRight"/>
+                    </LAYOUTNODE>
+                    <rtl:match name="OnEveryRow" nameConstraint="OnEveryRow" minOccurs="0" maxOccurs="unbounded">
+                        <MINIPAGE name="Table Row" class="grwTableRow" width="66.6" length="max" alignment="near" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer_1" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <rtl:input-variable name="printi2genrec.attended_by" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.attended_by Value" class="grwStringValue" x="8.3544" y="11.0414" width="110.4" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.attended_by}}"/>
+                            <rtl:input-variable name="printi2genrec.complaint_by" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.complaint_by Value" class="grwStringValue" x="8.3544" y="137.838" width="117" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.complaint_by}}"/>
+                            <rtl:input-variable name="printi2genrec.completed_by" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.completed_by Value" class="grwStringValue" x="8.3544" y="265.308" width="127.2" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.completed_by}}"/>
+                            <rtl:input-variable name="printi2genrec.issue" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.issue Value" class="grwStringValue" x="8.3544" y="405.384" width="102" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.issue}}"/>
+                        </MINIPAGE>
+                    </rtl:match>
+                </MINIPAGE>
+            </rtl:match>
+        </PXML>
+    </rtl:stylesheet>
+</report:Report>

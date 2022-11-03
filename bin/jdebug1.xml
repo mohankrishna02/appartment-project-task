@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?ScopeExtenderStyleSheet  systemId="file:/D:/Genero%20Projects/Apartment%20Project%20task%20report/Apartment%20Project%20task/amenityreport.4rp" styleURL="file:/D:/Genero%20Projects/Apartment%20Project%20task%20report/Apartment%20Project%20task/amenityreport.4rp" ignoreUnmatchedInput="true" variableValueNamesAreInLowerCase="true"?>
+<?PrettyPrinterStyleSheet  tee="true" writeToFile="jdebug2.xml"?>
+<?RTLStyleSheet  ignoreUnmatchedInput="true" autoCreate4GLVariables="true" variableValueNamesAreInLowerCase="true" styleURL="file:/D:/Genero%20Projects/Apartment%20Project%20task%20report/Apartment%20Project%20task/amenityreport.4rp" outputDeviceName="PDF" isPreview="0"?>
+<?PrettyPrinterStyleSheet  tee="true" writeToFile="jdebug3.xml"?>
+<?BoxDecoratorStyleSheet  systemId="file:/D:/Genero%20Projects/Apartment%20Project%20task%20report/Apartment%20Project%20task/amenityreport.4rp"?>
+<?HlPxmlToPxmlStyleSheet  notUsed="true"?>
+<?PrettyPrinterStyleSheet  tee="true" writeToFile="jdebug4.xml"?>
+<?PxmlLayouter  pageWidth="a4width" pageHeight="a4length" topMargin="1.3cm" leftMargin="1.3cm" rightMargin="1.3cm" bottomMargin="1.3cm" markOverfullBoxesInDocument="true"?>
+<?PdfWriterStyleSheet  antialiasFonts="true" antialiasShapes="true" monochrome="false" encodeImagesAsJPEG="0" jpegQuality="1.0" writeToFile="C:/Users/PMOHAN~1/AppData/Local/Temp/58595FA9-5DE2-48B7-BB28-6A097F2C3C31.pdf"?>
+<Report name="amenity.amreport" headerLength="0" trailerLength="0" pageLength="66" topMargin="3" bottomMargin="3" leftMargin="5" rightMargin="132" xmlns:rtli="http://www.4js.com/2004/RTL-INPUT" xmlns="http://www.4js.com/2004/REPORT">
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <PageHeader pageNo="1"/>
+    <OnEveryRow>
+        <rtli:variable-value name="printi2genrec.amenity_name" type="VARCHAR(55)" value="anon"/>
+        <rtli:variable-value name="printi2genrec.booked_by" type="VARCHAR(55)" value="mohan"/>
+        <rtli:variable-value name="printi2genrec.charges" type="INTEGER" value="        560" isoValue="560"/>
+        <rtli:variable-value name="printi2genrec.on_date" type="DATE" value="07/07/2021" isoValue="2021-07-07"/>
+        <rtli:variable-value name="printi2genrec.owner_type" type="VARCHAR(55)" value="private"/>
+        <rtli:variable-value name="printi2genrec.timing" type="DATETIME HOUR TO SECOND" value="19:30:56" isoValue="1900-01-01 19:30:56.00000"/>
+        <rtli:variable-value name="printi2genrec.unit_number" type="INTEGER" value="          1" isoValue="1"/>
+    </OnEveryRow>
+    <OnEveryRow>
+        <rtli:variable-value name="printi2genrec.amenity_name" type="VARCHAR(55)" value="doge"/>
+        <rtli:variable-value name="printi2genrec.booked_by" type="VARCHAR(55)" value="akhil"/>
+        <rtli:variable-value name="printi2genrec.charges" type="INTEGER" value="        700" isoValue="700"/>
+        <rtli:variable-value name="printi2genrec.on_date" type="DATE" value="08/05/2021" isoValue="2021-08-05"/>
+        <rtli:variable-value name="printi2genrec.owner_type" type="VARCHAR(55)" value="public"/>
+        <rtli:variable-value name="printi2genrec.timing" type="DATETIME HOUR TO SECOND" value="17:25:30" isoValue="1900-01-01 17:25:30.00000"/>
+        <rtli:variable-value name="printi2genrec.unit_number" type="INTEGER" value="          2" isoValue="2"/>
+    </OnEveryRow>
+    <OnLastRow/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <PageTrailer/>
+</Report>

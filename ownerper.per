@@ -1,0 +1,41 @@
+SCHEMA hrmdb
+TOOLBAR 
+ITEM find(IMAGE="find",TEXT=%"find")
+ITEM next (IMAGE="next",TEXT=%"next")
+ITEM previous (IMAGE="previous",TEXT=%"previous")
+ITEM accept(IMAGE="accept",TEXT=%"accept")
+ITEM cancel(IMAGE="cancel",TEXT=%"cancel")
+ITEM quit(IMAGE="quit",TEXT=%"quit")
+ITEM add(IMAGE="add",TEXT=%"add")
+ITEM update(IMAGE ="update",TEXT =%"update")
+ITEM delete(IMAGE ="delete",TEXT =%"delete")
+END
+ 
+LAYOUT
+GRID 
+{
+ <g                                           ><g                                   >
+ [a6                                         ]   [image6                           ]
+  OWNER NAME       :[f01                     ]   [                                 ]
+  UNIT NUMBER      :[f02                     ]   [                                 ]
+  ADDRESS          :[f03                     ]   [                                 ]
+  PURCHASED ON     :[f04                     ]   [                                 ]
+  SIZE SQFT        :[f05                     ]   [                                 ]
+ <                                            ><                                    >
+}
+END 
+END 
+
+TABLES owner
+END
+ 
+ATTRIBUTES 
+LABEL a6:a6, TEXT = "OWNER DETAILS";
+IMAGE image6:image6, IMAGE = "owner.jpg";
+EDIT f01 = owner.owner_name, COMMENTS = "ENTER OWNER NAME", PLACEHOLDER = "ENTER OWNER NAME";
+EDIT f02 = owner.unit_number, COMMENTS = "ENTER UNIT NUMBER", PLACEHOLDER = "ENTER UNIT NUMBER";
+EDIT f03 = owner.address, COMMENTS = "ENTER ADDRESS", PLACEHOLDER = "ENTER ADDRESS";
+DATEEDIT f04 = owner.purchased_on;
+EDIT f05 = owner.size_sqft, COMMENTS ="ENTER SIZE IN SQFT", PLACEHOLDER ="ENTER SIZE IN SQFT";
+END 
+

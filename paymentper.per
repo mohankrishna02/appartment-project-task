@@ -1,0 +1,47 @@
+SCHEMA hrmdb
+TOOLBAR 
+ITEM find(IMAGE="find",TEXT=%"find")
+ITEM next (IMAGE="next",TEXT=%"next")
+ITEM previous (IMAGE="previous",TEXT=%"previous")
+ITEM accept(IMAGE="accept",TEXT=%"accept")
+ITEM cancel(IMAGE="cancel",TEXT=%"cancel")
+ITEM quit(IMAGE="quit",TEXT=%"quit")
+ITEM add(IMAGE="add",TEXT=%"add")
+ITEM update(IMAGE ="update",TEXT =%"update")
+ITEM delete(IMAGE ="delete",TEXT =%"delete")
+END
+ 
+LAYOUT
+GRID 
+{
+ <g                                           ><g                                   >
+ [a5                                         ]   [image5                           ]
+  PAYMENT TYPE     :[f01                     ]   [                                 ]
+  UNIT NUMBER      :[f02                     ]   [                                 ]
+  PAID DATE        :[f03                     ]   [                                 ]
+  PAID             :[f04                     ]   [                                 ]
+  AMOUNT           :[f05                     ]   [                                 ]
+  PAID BY          :[f06                     ]   [                                 ]
+  COLLECTED BY     :[f07                     ]   [                                 ]
+  REMARKS          :[f08                     ]   [                                 ]
+ <                                            ><                                    >
+}
+END 
+END 
+
+TABLES Payment
+END
+ 
+ATTRIBUTES 
+LABEL a5:a5, TEXT = "PAYMENT DETAILS";
+IMAGE image5:image5, IMAGE = "payment.jpg";
+RADIOGROUP f01 = Payment.Payment_type,ITEMS =("DEBIT CARD","CREDIT CARD","UPI","NET BANKING");
+EDIT f02 = Payment.Unit_number, COMMENTS = "ENTER NUMBER", PLACEHOLDER = "ENTER NUMBER";
+DATEEDIT f03 = Payment.Paid_date;
+EDIT f04 = Payment.Paid_for, COMMENTS = "ENTER NAME", PLACEHOLDER = "ENTER NAME";
+EDIT f05 = Payment.Amount, COMMENTS ="ENTER AMOUNT", PLACEHOLDER ="ENTER AMOUNT";
+EDIT f06 = Payment.Paid_by, COMMENTS = "ENTER NAME", PLACEHOLDER ="ENTER NAME";
+EDIT f07 = payment.Collected_by,COMMENTS = "ENTER NAME", PLACEHOLDER = "ENTER NAME";
+TEXTEDIT f08 = Payment.Remarks, COMMENTS ="ENTER REMARKS", PLACEHOLDER = "ENTER REMARKS";
+END 
+

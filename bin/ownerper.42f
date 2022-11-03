@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="ownerper" build="3.20.08" sqlDbName="hrmdb" width="85" height="8">
+  <ToolBar>
+    <ToolBarItem name="find" image="find" text="find">
+      <LStr text="find"/>
+    </ToolBarItem>
+    <ToolBarItem name="next" image="next" text="next">
+      <LStr text="next"/>
+    </ToolBarItem>
+    <ToolBarItem name="previous" image="previous" text="previous">
+      <LStr text="previous"/>
+    </ToolBarItem>
+    <ToolBarItem name="accept" image="accept" text="accept">
+      <LStr text="accept"/>
+    </ToolBarItem>
+    <ToolBarItem name="cancel" image="cancel" text="cancel">
+      <LStr text="cancel"/>
+    </ToolBarItem>
+    <ToolBarItem name="quit" image="quit" text="quit">
+      <LStr text="quit"/>
+    </ToolBarItem>
+    <ToolBarItem name="add" image="add" text="add">
+      <LStr text="add"/>
+    </ToolBarItem>
+    <ToolBarItem name="update" image="update" text="update">
+      <LStr text="update"/>
+    </ToolBarItem>
+    <ToolBarItem name="delete" image="delete" text="delete">
+      <LStr text="delete"/>
+    </ToolBarItem>
+  </ToolBar>
+  <Grid width="85" height="8">
+    <Group posY="0" posX="1" gridWidth="46" gridHeight="8">
+      <Label name="a6" width="43" text="OWNER DETAILS" posY="1" posX="1" gridWidth="43"/>
+      <Label text="OWNER NAME" posY="2" posX="1" gridWidth="10"/>
+      <Label text=":" posY="2" posX="18" gridWidth="1"/>
+      <FormField name="owner.owner_name" colName="owner_name" sqlType="VARCHAR(55)" fieldId="0" sqlTabName="owner" tabIndex="1">
+        <Edit width="24" comment="ENTER OWNER NAME" placeholder="ENTER OWNER NAME" posY="2" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="UNIT NUMBER" posY="3" posX="1" gridWidth="11"/>
+      <Label text=":" posY="3" posX="18" gridWidth="1"/>
+      <FormField name="owner.unit_number" colName="unit_number" sqlType="INTEGER" fieldId="1" sqlTabName="owner" tabIndex="2">
+        <Edit width="24" comment="ENTER UNIT NUMBER" placeholder="ENTER UNIT NUMBER" posY="3" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="ADDRESS" posY="4" posX="1" gridWidth="7"/>
+      <Label text=":" posY="4" posX="18" gridWidth="1"/>
+      <FormField name="owner.address" colName="address" sqlType="VARCHAR(55)" fieldId="2" sqlTabName="owner" tabIndex="3">
+        <Edit width="24" comment="ENTER ADDRESS" placeholder="ENTER ADDRESS" posY="4" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="PURCHASED ON" posY="5" posX="1" gridWidth="12"/>
+      <Label text=":" posY="5" posX="18" gridWidth="1"/>
+      <FormField name="owner.purchased_on" colName="purchased_on" sqlType="DATE" fieldId="3" sqlTabName="owner" tabIndex="4">
+        <DateEdit width="22" posY="5" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="SIZE SQFT" posY="6" posX="1" gridWidth="9"/>
+      <Label text=":" posY="6" posX="18" gridWidth="1"/>
+      <FormField name="owner.size_sqft" colName="size_sqft" sqlType="DECIMAL(32)" fieldId="4" sqlTabName="owner" tabIndex="5">
+        <Edit width="24" comment="ENTER SIZE IN SQFT" placeholder="ENTER SIZE IN SQFT" posY="6" posX="20" gridWidth="24"/>
+      </FormField>
+    </Group>
+    <Group posY="0" posX="47" gridWidth="38" gridHeight="8">
+      <Image name="image6" width="33" height="6" image="owner.jpg" posY="1" posX="3" gridWidth="33" gridHeight="6"/>
+    </Group>
+  </Grid>
+  <RecordView tabName="owner">
+    <Link colName="owner_name" fieldIdRef="0"/>
+    <Link colName="unit_number" fieldIdRef="1"/>
+    <Link colName="address" fieldIdRef="2"/>
+    <Link colName="purchased_on" fieldIdRef="3"/>
+    <Link colName="size_sqft" fieldIdRef="4"/>
+  </RecordView>
+</Form>

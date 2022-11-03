@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="amenityper" build="3.20.08" sqlDbName="hrmdb" width="52" height="10">
+  <ToolBar>
+    <ToolBarItem name="find" image="find" text="find">
+      <LStr text="find"/>
+    </ToolBarItem>
+    <ToolBarItem name="next" image="next" text="next">
+      <LStr text="next"/>
+    </ToolBarItem>
+    <ToolBarItem name="previous" image="previous" text="previous">
+      <LStr text="previous"/>
+    </ToolBarItem>
+    <ToolBarItem name="accept" image="accept" text="accept">
+      <LStr text="accept"/>
+    </ToolBarItem>
+    <ToolBarItem name="cancel" image="cancel" text="cancel">
+      <LStr text="cancel"/>
+    </ToolBarItem>
+    <ToolBarItem name="quit" image="quit" text="quit">
+      <LStr text="quit"/>
+    </ToolBarItem>
+    <ToolBarItem name="add" image="add" text="add">
+      <LStr text="add"/>
+    </ToolBarItem>
+    <ToolBarItem name="update" image="update" text="update">
+      <LStr text="update"/>
+    </ToolBarItem>
+    <ToolBarItem name="delete" image="delete" text="delete">
+      <LStr text="delete"/>
+    </ToolBarItem>
+  </ToolBar>
+  <HBox>
+    <Grid width="9" height="1">
+      <Image name="image2" width="6" image="amenity.png" posY="0" posX="2" gridWidth="6"/>
+    </Grid>
+    <Grid width="43" height="10">
+      <Group posY="0" posX="1" gridWidth="42" gridHeight="10">
+        <Label name="a1" width="38" text="AMENITY DETAILS" posY="1" posX="1" gridWidth="38"/>
+        <Label text="AMENITY NAME :" posY="2" posX="1" gridWidth="14"/>
+        <FormField name="amenity.amenity_name" colName="amenity_name" sqlType="VARCHAR(55)" fieldId="0" sqlTabName="amenity" tabIndex="1">
+          <Edit width="24" comment="ENTER NAME" placeholder="ENTER NAME" posY="2" posX="16" gridWidth="24"/>
+        </FormField>
+        <Label text="BOOKED BY" posY="3" posX="1" gridWidth="9"/>
+        <Label text=":" posY="3" posX="14" gridWidth="1"/>
+        <FormField name="amenity.booked_by" colName="booked_by" sqlType="VARCHAR(55)" fieldId="1" sqlTabName="amenity" tabIndex="2">
+          <Edit width="24" comment="ENTER BOOKED BY" placeholder="ENTER BOOKED BY" posY="3" posX="16" gridWidth="24"/>
+        </FormField>
+        <Label text="CHARGES" posY="4" posX="1" gridWidth="7"/>
+        <Label text=":" posY="4" posX="14" gridWidth="1"/>
+        <FormField name="amenity.charges" colName="charges" sqlType="INTEGER" fieldId="2" sqlTabName="amenity" tabIndex="3">
+          <Edit width="24" comment="ENTER CHARGES" placeholder="ENTER CHARGES" posY="4" posX="16" gridWidth="24"/>
+        </FormField>
+        <Label text="ON DATE" posY="5" posX="1" gridWidth="7"/>
+        <Label text=":" posY="5" posX="14" gridWidth="1"/>
+        <FormField name="amenity.on_date" colName="on_date" sqlType="DATE" fieldId="3" sqlTabName="amenity" tabIndex="4">
+          <DateEdit width="22" posY="5" posX="16" gridWidth="24"/>
+        </FormField>
+        <Label text="OWNER TYPE" posY="6" posX="1" gridWidth="10"/>
+        <Label text=":" posY="6" posX="14" gridWidth="1"/>
+        <FormField name="amenity.owner_type" colName="owner_type" sqlType="VARCHAR(55)" fieldId="4" sqlTabName="amenity" tabIndex="5">
+          <Edit width="24" comment="ENTER OWNER TYPE" placeholder="ENTER OWNER TYPE" posY="6" posX="16" gridWidth="24"/>
+        </FormField>
+        <Label text="TIMING" posY="7" posX="1" gridWidth="6"/>
+        <Label text=":" posY="7" posX="14" gridWidth="1"/>
+        <FormField name="amenity.timing" colName="timing" sqlType="DATETIME HOUR TO SECOND" fieldId="5" sqlTabName="amenity" tabIndex="6">
+          <TimeEdit width="24" comment="ENTER TIME" placeholder="ENTER TIME" posY="7" posX="16" gridWidth="24"/>
+        </FormField>
+        <Label text="UNIT NUMBER" posY="8" posX="1" gridWidth="11"/>
+        <Label text=":" posY="8" posX="14" gridWidth="1"/>
+        <FormField name="amenity.unit_number" colName="unit_number" sqlType="INTEGER" fieldId="6" sqlTabName="amenity" tabIndex="7">
+          <Edit width="24" comment="ENTER UNIT NUMBER" placeholder="ENTER UNIT NUMBER" posY="8" posX="16" gridWidth="24"/>
+        </FormField>
+      </Group>
+    </Grid>
+  </HBox>
+  <RecordView tabName="amenity">
+    <Link colName="amenity_name" fieldIdRef="0"/>
+    <Link colName="booked_by" fieldIdRef="1"/>
+    <Link colName="charges" fieldIdRef="2"/>
+    <Link colName="on_date" fieldIdRef="3"/>
+    <Link colName="owner_type" fieldIdRef="4"/>
+    <Link colName="timing" fieldIdRef="5"/>
+    <Link colName="unit_number" fieldIdRef="6"/>
+  </RecordView>
+</Form>

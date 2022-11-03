@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report:Report xmlns:rtl="http://www.4js.com/2004/RTL" xmlns:report="http://www.4js.com/2007/REPORT" xmlns="http://www.4js.com/2004/PXML" gstVersion="31408" version="6.00">
+    <report:Settings RWPageWidth="a4width" RWPageLength="a4length" RWLeftMargin="1.3cm" RWTopMargin="1.3cm" RWRightMargin="1.3cm" RWBottomMargin="1.3cm">
+        <report:FormatList>
+            <report:Format-SVG/>
+            <report:Format-PDF/>
+            <report:Format-image/>
+        </report:FormatList>
+    </report:Settings>
+    <report:Data RWDataLocation="apartment.rdd" RWFglReportName="apreport"/>
+    <report:Conflicts/>
+    <rtl:stylesheet>
+        <PXML>
+            <rtl:match name="Report" nameConstraint="Report" minOccurs="1" maxOccurs="1">
+                <MINIPAGE name="Page Root" width="max" length="max" bgColor="#aaaaff" fontBold="true">
+                    <LAYOUTNODE name="Page Header" width="max" length="min" port="anyPageHeader">
+                        <MINIPAGE name="StripeLayouter3" width="min" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Report Title" x="0" y="max/2" anchorX="0" anchorY="0.5" alignment="baseline" fontSize="25" fontItalic="true" baselineType="leftleft" floatingBehavior="enclosed" text="APARTMENT DETAILS"/>
+                            <PAGENOBOX name="PageNoBox" x="1.23857" y="max" anchorX="0" anchorY="1" alignment="baseline" baselineType="leftleft" floatingBehavior="enclosed" textAlignment="right"/>
+                            <IMAGEBOX name="ImageBox" x="3.8318" y="13.0233" width="19.8" length="19.8" anchorX="0" anchorY="0" floatingBehavior="enclosed" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" intendedResolution="120"/>
+                            <IMAGEBOX name="ImageBox1" x="4.738" y="456.933" width="18" length="18.6" anchorX="0" anchorY="0" floatingBehavior="enclosed" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" intendedResolution="120"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Table Header" class="grwTableHeader" width="60" length="max" alignment="near" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <WORDBOX name="printi2genrec.apartment_name Title" class="grwTableStringColumnTitle" x="41.4381" y="6.2245" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Apartment Name" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.block_name Title" class="grwTableStringColumnTitle" x="41.4381" y="124.489" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Block Name" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.floor_no Title" class="grwTableNumericColumnTitle" x="41.4381" y="254.374" anchorX="0" anchorY="0" floatingBehavior="enclosed" textAlignment="right" text="Floor No" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.size_sqft Title" class="grwTableNumericColumnTitle" x="41.4381" y="410.748" anchorX="0" anchorY="0" floatingBehavior="enclosed" textAlignment="right" text="Size Sqft" localizeText="true"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Separator" width="1" length="max" bgColor="#000000" layoutDirection="leftToRight"/>
+                    </LAYOUTNODE>
+                    <rtl:match name="OnEveryRow" nameConstraint="OnEveryRow" minOccurs="0" maxOccurs="unbounded">
+                        <MINIPAGE name="Table Row" class="grwTableRow" width="63" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer_1" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <rtl:input-variable name="printi2genrec.apartment_name" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.apartment_name Value" class="grwStringValue" x="6.645" y="6.2245" width="94.2" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.apartment_name}}"/>
+                            <rtl:input-variable name="printi2genrec.block_name" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.block_name Value" class="grwStringValue" x="7.2923" y="136.688" width="73.2" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.block_name}}"/>
+                            <rtl:input-variable name="printi2genrec.floor_no" type="FGLNumeric" expectedLocation="expectedHere"/>
+                            <DECIMALFORMATBOX name="printi2genrec.floor_no Value" class="grwNumericValue" x="7.2923" y="283.304" width="44.6" anchorX="0" anchorY="1" floatingBehavior="enclosed" textAlignment="right" format="----------#" value="{{printi2genrec.floor_no}}"/>
+                            <rtl:input-variable name="printi2genrec.size_sqft" type="FGLNumeric" expectedLocation="expectedHere"/>
+                            <DECIMALFORMATBOX name="printi2genrec.size_sqft Value" class="grwNumericValue" x="6.645" y="456.933" anchorX="0" anchorY="1" floatingBehavior="enclosed" textAlignment="right" format="--,---,---,---,---,---,---,---,---,---,--&amp;.&amp;&amp;" value="{{printi2genrec.size_sqft}}"/>
+                        </MINIPAGE>
+                    </rtl:match>
+                </MINIPAGE>
+            </rtl:match>
+        </PXML>
+    </rtl:stylesheet>
+</report:Report>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WorkspaceViewState version="1.0">
+  <ExpandedNodes>
+    <Node path="Apartment Project.4pw" type="pm/main-project"/>
+    <Node path="Apartment Project.4pw/Group" type="pm/group"/>
+    <Node path="Apartment Project.4pw/Group/Application" type="pm/application"/>
+    <Node path="Apartment Project.4pw/Group/Application/Amenity" type="pm/virtual-folder"/>
+    <Node path="Apartment Project.4pw/Group/Application/Association" type="pm/virtual-folder"/>
+    <Node path="Apartment Project.4pw/Group/Application/Helpdesk" type="pm/virtual-folder"/>
+    <Node path="Apartment Project.4pw/Group/Application/transaction" type="pm/virtual-folder"/>
+    <Node path="Apartment Project.4pw/Group/Databases" type="pm/library"/>
+  </ExpandedNodes>
+  <OpenDocuments>
+    <Document container="true" filePath="amenityreport.4rp" locator="" module="mod-rw"/>
+    <Document container="true" filePath="transcationper.per" locator="1:1" module="mod-ce3">
+      <Data name="8" value="CP1252"/>
+    </Document>
+    <Document container="true" filePath="transcation.4gl" locator="227:2" module="mod-ce3">
+      <Data name="8" value="CP1252"/>
+    </Document>
+    <Document container="true" filePath="tanenreport.4rp" locator="" module="mod-rw"/>
+    <Document container="true" filePath="transreport.4rp" locator="" module="mod-rw"/>
+    <Document container="true" filePath="amenity.4gl" locator="312:1" module="mod-ce3">
+      <Data name="8" value="CP1252"/>
+    </Document>
+    <Document container="true" filePath="tanent.4gl" locator="1:1" module="mod-ce3">
+      <Data name="8" value="CP1252"/>
+    </Document>
+    <Document container="true" filePath="hrmdb.4db" locator="" module="mod-db3"/>
+    <Document container="true" filePath="amenityper.per" locator="1:1" module="mod-ce3">
+      <Data name="8" value="CP1252"/>
+    </Document>
+    <Document container="true" filePath="association.4gl" locator="1:1" module="mod-ce3">
+      <Data name="8" value="CP1252"/>
+    </Document>
+    <Document container="true" filePath="helpdesk.4gl" locator="277:27" module="mod-ce3">
+      <Data name="8" value="CP1252"/>
+    </Document>
+  </OpenDocuments>
+  <CurrentDocument filePath="" module="mod-wp"/>
+</WorkspaceViewState>

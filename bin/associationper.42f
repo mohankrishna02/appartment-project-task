@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="associationper" build="3.20.08" sqlDbName="hrmdb" width="85" height="7">
+  <ToolBar>
+    <ToolBarItem name="find" image="find" text="find">
+      <LStr text="find"/>
+    </ToolBarItem>
+    <ToolBarItem name="next" image="next" text="next">
+      <LStr text="next"/>
+    </ToolBarItem>
+    <ToolBarItem name="previous" image="previous" text="previous">
+      <LStr text="previous"/>
+    </ToolBarItem>
+    <ToolBarItem name="accept" image="accept" text="accept">
+      <LStr text="accept"/>
+    </ToolBarItem>
+    <ToolBarItem name="cancel" image="cancel" text="cancel">
+      <LStr text="cancel"/>
+    </ToolBarItem>
+    <ToolBarItem name="quit" image="quit" text="quit">
+      <LStr text="quit"/>
+    </ToolBarItem>
+    <ToolBarItem name="add" image="add" text="add">
+      <LStr text="add"/>
+    </ToolBarItem>
+    <ToolBarItem name="update" image="update" text="update">
+      <LStr text="update"/>
+    </ToolBarItem>
+    <ToolBarItem name="delete" image="delete" text="delete">
+      <LStr text="delete"/>
+    </ToolBarItem>
+  </ToolBar>
+  <Grid width="85" height="7">
+    <Group posY="0" posX="1" gridWidth="46" gridHeight="7">
+      <Label name="a3" width="43" text="ASSOCIATION DETAILS" posY="1" posX="1" gridWidth="43"/>
+      <Label text="ASSOCIATION NAME :" posY="2" posX="1" gridWidth="18"/>
+      <FormField name="association.association_name" colName="association_name" sqlType="VARCHAR(55)" fieldId="0" sqlTabName="association" tabIndex="1">
+        <Edit width="24" comment="ENTER ASSOCIATION NAME" placeholder="ENTER ASSOCIATION NAME" posY="2" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="POSITION" posY="3" posX="1" gridWidth="8"/>
+      <Label text=":" posY="3" posX="18" gridWidth="1"/>
+      <FormField name="association.position" colName="position" sqlType="VARCHAR(55)" fieldId="1" sqlTabName="association" tabIndex="2">
+        <Edit width="24" comment="ENTER POSOTION" placeholder="ENTER POSITION" posY="3" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="RESPONSBILITY" posY="4" posX="1" gridWidth="13"/>
+      <Label text=":" posY="4" posX="18" gridWidth="1"/>
+      <FormField name="association.responsbility" colName="responsbility" sqlType="VARCHAR(55)" fieldId="2" sqlTabName="association" tabIndex="3">
+        <Edit width="24" comment="ENTER RESPONSBILITY" placeholder="ENTER RESPONSBILITY" posY="4" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="UNIT NUMBER" posY="5" posX="1" gridWidth="11"/>
+      <Label text=":" posY="5" posX="18" gridWidth="1"/>
+      <FormField name="association.unit_number" colName="unit_number" sqlType="INTEGER" fieldId="3" sqlTabName="association" tabIndex="4">
+        <Edit width="24" comment="ENTER UNIT NUMBER" placeholder="ENTER UNIT NUMBER" posY="5" posX="20" gridWidth="24"/>
+      </FormField>
+    </Group>
+    <Group posY="0" posX="47" gridWidth="38" gridHeight="7">
+      <Image name="image3" width="33" height="5" image="association.jpg" posY="1" posX="3" gridWidth="33" gridHeight="5"/>
+    </Group>
+  </Grid>
+  <RecordView tabName="association">
+    <Link colName="association_name" fieldIdRef="0"/>
+    <Link colName="position" fieldIdRef="1"/>
+    <Link colName="responsbility" fieldIdRef="2"/>
+    <Link colName="unit_number" fieldIdRef="3"/>
+  </RecordView>
+</Form>

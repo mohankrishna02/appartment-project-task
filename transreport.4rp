@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report:Report xmlns:rtl="http://www.4js.com/2004/RTL" xmlns:report="http://www.4js.com/2007/REPORT" xmlns="http://www.4js.com/2004/PXML" gstVersion="31408" version="6.00">
+    <report:Settings RWPageWidth="a4width" RWPageLength="a4length" RWLeftMargin="1.3cm" RWTopMargin="1.3cm" RWRightMargin="1.3cm" RWBottomMargin="1.3cm">
+        <report:FormatList>
+            <report:Format-SVG/>
+            <report:Format-PDF/>
+            <report:Format-image/>
+        </report:FormatList>
+    </report:Settings>
+    <report:Data RWDataLocation="transcation.rdd" RWFglReportName="trreport"/>
+    <report:Conflicts/>
+    <rtl:stylesheet>
+        <PXML>
+            <rtl:match name="Report" nameConstraint="Report" minOccurs="1" maxOccurs="1">
+                <MINIPAGE name="Page Root" width="max" length="max">
+                    <LAYOUTNODE name="Page Header" width="max" length="min" port="anyPageHeader">
+                        <MINIPAGE name="StripeLayouter3" width="min" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Report Title" x="0" y="max/2" anchorX="0" anchorY="0.5" alignment="baseline" fontSize="25" baselineType="leftleft" floatingBehavior="enclosed" text="TRANSACTIONS DETAILS"/>
+                            <PAGENOBOX name="PageNoBox" x="1.23857" y="max" anchorX="0" anchorY="1" alignment="baseline" baselineType="leftleft" floatingBehavior="enclosed" textAlignment="right"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Table Header" class="grwTableHeader" width="40.8" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <WORDBOX name="printi2genrec.owner_name Title" class="grwTableStringColumnTitle" x="25.6873" y="6.8883" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Owner Name" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.unit_number Title" class="grwTableNumericColumnTitle" x="25.6873" y="169.481" anchorX="0" anchorY="0" floatingBehavior="enclosed" textAlignment="right" text="Unit Number" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.tanen_name Title" class="grwTableStringColumnTitle" x="25.6873" y="260.787" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Tanen Name" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.join_on Title" class="grwTableDatetimeColumnTitle" x="25.6873" y="424.533" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Join On" localizeText="true"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Separator" width="1" length="max" bgColor="#000000" layoutDirection="leftToRight"/>
+                    </LAYOUTNODE>
+                    <rtl:match name="OnEveryRow" nameConstraint="OnEveryRow" minOccurs="0" maxOccurs="unbounded">
+                        <MINIPAGE name="Table Row" class="grwTableRow" width="66" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer_1" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <rtl:input-variable name="printi2genrec.owner_name" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.owner_name Value" class="grwStringValue" x="7.9734" y="6.8883" width="133.8" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.owner_name}}"/>
+                            <rtl:input-variable name="printi2genrec.unit_number" type="FGLNumeric" expectedLocation="expectedHere"/>
+                            <DECIMALFORMATBOX name="printi2genrec.unit_number Value" class="grwNumericValue" x="7.9734" y="240.299" anchorX="0" anchorY="1" floatingBehavior="enclosed" textAlignment="right" format="----------#" value="{{printi2genrec.unit_number}}"/>
+                            <rtl:input-variable name="printi2genrec.tanen_name" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.tanen_name Value" class="grwStringValue" x="7.9734" y="260.787" width="140.4" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.tanen_name}}"/>
+                            <rtl:input-variable name="printi2genrec.join_on" type="FGLString" expectedLocation="expectedHere"/>
+                            <DATEFORMATBOX name="printi2genrec.join_on Value" class="grwDateValue" x="7.9734" y="424.533" anchorX="0" anchorY="0" floatingBehavior="enclosed" value="{{Date.fromIsoValue(printi2genrec.join_on.isoValue)}}"/>
+                        </MINIPAGE>
+                    </rtl:match>
+                </MINIPAGE>
+            </rtl:match>
+        </PXML>
+    </rtl:stylesheet>
+</report:Report>

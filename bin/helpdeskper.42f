@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="helpdeskper" build="3.20.08" sqlDbName="hrmdb" width="85" height="10">
+  <ToolBar>
+    <ToolBarItem name="find" image="find" text="find">
+      <LStr text="find"/>
+    </ToolBarItem>
+    <ToolBarItem name="next" image="next" text="next">
+      <LStr text="next"/>
+    </ToolBarItem>
+    <ToolBarItem name="previous" image="previous" text="previous">
+      <LStr text="previous"/>
+    </ToolBarItem>
+    <ToolBarItem name="accept" image="accept" text="accept">
+      <LStr text="accept"/>
+    </ToolBarItem>
+    <ToolBarItem name="cancel" image="cancel" text="cancel">
+      <LStr text="cancel"/>
+    </ToolBarItem>
+    <ToolBarItem name="quit" image="quit" text="quit">
+      <LStr text="quit"/>
+    </ToolBarItem>
+    <ToolBarItem name="add" image="add" text="add">
+      <LStr text="add"/>
+    </ToolBarItem>
+    <ToolBarItem name="update" image="update" text="update">
+      <LStr text="update"/>
+    </ToolBarItem>
+    <ToolBarItem name="delete" image="delete" text="delete">
+      <LStr text="delete"/>
+    </ToolBarItem>
+  </ToolBar>
+  <Grid width="85" height="10">
+    <Group posY="0" posX="1" gridWidth="46" gridHeight="10">
+      <Label name="a4" width="43" text="HELP DESK" posY="1" posX="1" gridWidth="43"/>
+      <Label text="ATTENDED BY" posY="2" posX="1" gridWidth="11"/>
+      <Label text=":" posY="2" posX="18" gridWidth="1"/>
+      <FormField name="helpdesk.attended_by" colName="attended_by" sqlType="VARCHAR(55)" fieldId="0" sqlTabName="helpdesk" tabIndex="1">
+        <Edit width="24" comment="ENTER ATTENDED BY" placeholder="ENTER ATTENDED BY" posY="2" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="COMPLAINT BY" posY="3" posX="1" gridWidth="12"/>
+      <Label text=":" posY="3" posX="18" gridWidth="1"/>
+      <FormField name="helpdesk.complaint_by" colName="complaint_by" sqlType="VARCHAR(55)" fieldId="1" sqlTabName="helpdesk" tabIndex="2">
+        <Edit width="24" comment="ENTER POSOTION" placeholder="ENTER COMPLAINT BY" posY="3" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="COMPLETED BY" posY="4" posX="1" gridWidth="12"/>
+      <Label text=":" posY="4" posX="18" gridWidth="1"/>
+      <FormField name="helpdesk.completed_by" colName="completed_by" sqlType="VARCHAR(55)" fieldId="2" sqlTabName="helpdesk" tabIndex="3">
+        <Edit width="24" comment="ENTER COMPLETED BY" placeholder="ENTER COMPLETED BY" posY="4" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="ISSUE" posY="5" posX="1" gridWidth="5"/>
+      <Label text=":" posY="5" posX="18" gridWidth="1"/>
+      <FormField name="helpdesk.issue" colName="issue" sqlType="VARCHAR(55)" fieldId="3" sqlTabName="helpdesk" tabIndex="4">
+        <Edit width="24" comment="ENTER ISSUE" placeholder="ENTER ISSUE" posY="5" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="ISSUE DATE" posY="6" posX="1" gridWidth="10"/>
+      <Label text=":" posY="6" posX="18" gridWidth="1"/>
+      <FormField name="helpdesk.issue_date" colName="issue_date" sqlType="DATE" fieldId="4" sqlTabName="helpdesk" tabIndex="5">
+        <DateEdit width="22" posY="6" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="STATUS" posY="7" posX="1" gridWidth="6"/>
+      <Label text=":" posY="7" posX="18" gridWidth="1"/>
+      <FormField name="helpdesk.status" colName="status" sqlType="VARCHAR(55)" fieldId="5" sqlTabName="helpdesk" tabIndex="6">
+        <Edit width="24" comment="ENTER STATUS" placeholder="ENTER STATUS" posY="7" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="UNIT NUMBER" posY="8" posX="1" gridWidth="11"/>
+      <Label text=":" posY="8" posX="18" gridWidth="1"/>
+      <FormField name="helpdesk.unit_number" colName="unit_number" sqlType="INTEGER" fieldId="6" sqlTabName="helpdesk" tabIndex="7">
+        <Edit width="24" comment="ENTER UNIT NUMBER" placeholder="ENTER UNIT NUMBER" posY="8" posX="20" gridWidth="24"/>
+      </FormField>
+    </Group>
+    <Group posY="0" posX="47" gridWidth="38" gridHeight="10">
+      <Image name="image4" width="33" height="8" image="helpdesk.png" posY="1" posX="3" gridWidth="33" gridHeight="8"/>
+    </Group>
+  </Grid>
+  <RecordView tabName="helpdesk">
+    <Link colName="attended_by" fieldIdRef="0"/>
+    <Link colName="complaint_by" fieldIdRef="1"/>
+    <Link colName="completed_by" fieldIdRef="2"/>
+    <Link colName="issue" fieldIdRef="3"/>
+    <Link colName="issue_date" fieldIdRef="4"/>
+    <Link colName="status" fieldIdRef="5"/>
+    <Link colName="unit_number" fieldIdRef="6"/>
+  </RecordView>
+</Form>

@@ -1,0 +1,41 @@
+SCHEMA hrmdb
+TOOLBAR 
+ITEM find(IMAGE="find",TEXT=%"find")
+ITEM next (IMAGE="next",TEXT=%"next")
+ITEM previous (IMAGE="previous",TEXT=%"previous")
+ITEM accept(IMAGE="accept",TEXT=%"accept")
+ITEM cancel(IMAGE="cancel",TEXT=%"cancel")
+ITEM quit(IMAGE="quit",TEXT=%"quit")
+ITEM add(IMAGE="add",TEXT=%"add")
+ITEM update(IMAGE ="update",TEXT =%"update")
+ITEM delete(IMAGE ="delete",TEXT =%"delete")
+END
+ 
+LAYOUT
+GRID 
+{
+ <g                                           ><g                                   >
+ [a7                                         ]   [image7                           ]
+  TANENT NAME      :[f01                     ]   [                                 ]
+  UNIT NUMBER      :[f02                     ]   [                                 ]
+  ADDRESS          :[f03                     ]   [                                 ]
+  JOIN ON          :[f04                     ]   [                                 ]
+  SIZE SQFT        :[f05                     ]   [                                 ]
+ <                                            ><                                    >
+}
+END 
+END 
+
+TABLES tanent
+END
+ 
+ATTRIBUTES 
+LABEL a7:a7, TEXT = "TANENT DETAILS";
+IMAGE image7:image7, IMAGE = "tanent.jpg";
+EDIT f01 = tanent.tanen_name, COMMENTS = "ENTER TANENT NAME", PLACEHOLDER = "ENTER TANENT NAME";
+EDIT f02 = tanent.unit_number, COMMENTS = "ENTER UNIT NUMBER", PLACEHOLDER = "ENTER UNIT NUMBER";
+EDIT f03 = tanent.address, COMMENTS = "ENTER ADDRESS", PLACEHOLDER = "ENTER ADDRESS";
+DATEEDIT f04 = tanent.join_on;
+EDIT f05 = tanent.size_sqft, COMMENTS ="ENTER SIZE IN SQFT", PLACEHOLDER ="ENTER SIZE IN SQFT";
+END 
+

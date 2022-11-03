@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WorkspaceDatabase fileContentsEncoding="CP1252" version="3.0">
+<File n="amenity.4gl" s="2" ts="20210805192435333">
+<Fct c="8" el="483" l="452" n="amreport(printi2genrec RECORD)" t="R" v="pub"/>
+<Fct c="11" el="450" l="421" n="amenity_report()" t="F" v="pub">
+<Call c="10" l="427" n="fgl_report_LoadCurrentSettings" t="F"/>
+<Call c="14" l="428" n="fgl_report_SelectDevice" t="F"/>
+<Call c="14" l="429" n="fgl_report_SelectPreview" t="F"/>
+<Call c="20" l="430" n="fgl_report_commitCurrentSettings" t="F"/>
+<Call c="18" l="436" n="amreport" t="R"/>
+<Call c="26" l="444" n="amreport" t="R"/>
+<Call c="19" l="448" n="amreport" t="R"/>
+</Fct>
+<Fct c="10" el="419" l="412" n="clean_up_fun()" t="F" v="pub"/>
+<Fct c="10" el="410" l="382" n="delete_check()" t="F" v="pub"/>
+<Fct c="10" el="380" l="366" n="delete_value()" t="F" v="pub"/>
+<Fct c="10" el="364" l="338" n="update_cust()" t="F" v="pub"/>
+<Fct c="10" el="336" l="323" n="insert_cust()" t="F" v="pub"/>
+<Fct c="10" el="321" l="195" n="fun_input_clg1(au_flag CHAR(20))" t="F" v="pub"/>
+<Fct c="10" el="193" l="191" n="display_custm()" t="F" v="pub"/>
+<Fct c="10" el="189" l="171" n="fetch_rel_cust(p_fetch_flag SMALLINT)" t="F" v="pub">
+<Call c="10" l="177" n="fetch_custm" t="F"/>
+<Call c="14" l="180" n="display_custm" t="F"/>
+</Fct>
+<Fct c="10" el="169" l="144" n="fetch_custm(p_fetch_flag SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="142" l="122" n="cust1_select(p_where_clause STRING)" t="F" v="pub">
+<Call c="10" l="133" n="fetch_custm" t="F"/>
+</Fct>
+<Fct c="10" el="120" l="98" n="get_cust_cntm(p_where_clause STRING)" t="F" v="pub"/>
+<Fct c="10" el="96" l="61" n="query_cust()" t="F" v="pub">
+<Call c="14" l="80" n="get_cust_cntm" t="F"/>
+<Call c="18" l="83" n="cust1_select" t="F"/>
+<Call c="14" l="91" n="display_custm" t="F"/>
+</Fct>
+<Fct c="10" el="58" l="17" n="fun_amenity()" t="F" v="pub">
+<Call c="18" l="23" n="query_cust" t="F"/>
+<Call c="22" l="26" n="fetch_rel_cust" t="F"/>
+<Call c="22" l="33" n="fetch_rel_cust" t="F"/>
+<Call c="11" l="39" n="fun_input_clg1" t="F"/>
+<Call c="18" l="40" n="insert_cust" t="F"/>
+<Call c="18" l="44" n="update_cust" t="F"/>
+<Call c="13" l="47" n="delete_check" t="F"/>
+<Call c="18" l="48" n="delete_value" t="F"/>
+<Call c="18" l="55" n="amenity_report" t="F"/>
+</Fct>
+<Fct c="10" el="15" l="9" n="amenity_fun()" t="F" v="pub">
+<Call c="14" l="12" n="fun_amenity" t="F"/>
+</Fct>
+</File>
+<File n="apartment.4gl" s="2" ts="20210805192436307">
+<Fct c="8" el="455" l="424" n="apreport(printi2genrec RECORD)" t="R" v="pub"/>
+<Fct c="10" el="422" l="393" n="apartment_report()" t="F" v="pub">
+<Call c="10" l="399" n="fgl_report_LoadCurrentSettings" t="F"/>
+<Call c="14" l="400" n="fgl_report_SelectDevice" t="F"/>
+<Call c="14" l="401" n="fgl_report_SelectPreview" t="F"/>
+<Call c="20" l="402" n="fgl_report_commitCurrentSettings" t="F"/>
+<Call c="18" l="408" n="apreport" t="R"/>
+<Call c="26" l="416" n="apreport" t="R"/>
+<Call c="19" l="420" n="apreport" t="R"/>
+</Fct>
+<Fct c="10" el="391" l="384" n="apartment_cleanup_fun()" t="F" v="pub"/>
+<Fct c="10" el="382" l="354" n="apartment_delete_check()" t="F" v="pub"/>
+<Fct c="10" el="352" l="338" n="apartment_delete()" t="F" v="pub"/>
+<Fct c="10" el="336" l="311" n="apartment_update()" t="F" v="pub"/>
+<Fct c="10" el="309" l="296" n="apartment_insert()" t="F" v="pub"/>
+<Fct c="10" el="294" l="195" n="apartment_input_clg(au_flag CHAR(20))" t="F" v="pub"/>
+<Fct c="10" el="193" l="191" n="apartment_display()" t="F" v="pub"/>
+<Fct c="10" el="189" l="171" n="apartment_fetch_rel(p_fetch_flag SMALLINT)" t="F" v="pub">
+<Call c="10" l="177" n="apartment_fetch_cust" t="F"/>
+<Call c="14" l="180" n="apartment_display" t="F"/>
+</Fct>
+<Fct c="10" el="169" l="144" n="apartment_fetch_cust(p_fetch_flag SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="142" l="122" n="apartment_cust_select(p_where_clause STRING)" t="F" v="pub">
+<Call c="10" l="133" n="apartment_fetch_cust" t="F"/>
+</Fct>
+<Fct c="10" el="120" l="98" n="apartment_get_cust_cnt(p_where_clause STRING)" t="F" v="pub"/>
+<Fct c="10" el="96" l="61" n="apartment_query()" t="F" v="pub">
+<Call c="14" l="80" n="apartment_get_cust_cnt" t="F"/>
+<Call c="18" l="83" n="apartment_cust_select" t="F"/>
+<Call c="14" l="91" n="apartment_display" t="F"/>
+</Fct>
+<Fct c="10" el="58" l="17" n="fun_apartment()" t="F" v="pub">
+<Call c="18" l="23" n="apartment_query" t="F"/>
+<Call c="22" l="26" n="apartment_fetch_rel" t="F"/>
+<Call c="22" l="33" n="apartment_fetch_rel" t="F"/>
+<Call c="11" l="39" n="apartment_input_clg" t="F"/>
+<Call c="18" l="40" n="apartment_insert" t="F"/>
+<Call c="18" l="44" n="apartment_update" t="F"/>
+<Call c="13" l="47" n="apartment_delete_check" t="F"/>
+<Call c="18" l="48" n="apartment_delete" t="F"/>
+<Call c="18" l="55" n="apartment_report" t="F"/>
+</Fct>
+<Fct c="10" el="15" l="9" n="apartment_fun()" t="F" v="pub">
+<Call c="14" l="12" n="fun_apartment" t="F"/>
+</Fct>
+</File>
+<File n="association.4gl" s="2" ts="20210805194003718">
+<Fct c="8" el="440" l="409" n="asreport(printi2genrec RECORD)" t="R" v="pub"/>
+<Fct c="10" el="407" l="378" n="association_report()" t="F" v="pub">
+<Call c="10" l="384" n="fgl_report_LoadCurrentSettings" t="F"/>
+<Call c="14" l="385" n="fgl_report_SelectDevice" t="F"/>
+<Call c="14" l="386" n="fgl_report_SelectPreview" t="F"/>
+<Call c="20" l="387" n="fgl_report_commitCurrentSettings" t="F"/>
+<Call c="18" l="393" n="asreport" t="R"/>
+<Call c="26" l="401" n="asreport" t="R"/>
+<Call c="19" l="405" n="asreport" t="R"/>
+</Fct>
+<Fct c="10" el="376" l="369" n="association_cleanup_fun()" t="F" v="pub"/>
+<Fct c="10" el="367" l="339" n="association_delete_check()" t="F" v="pub"/>
+<Fct c="10" el="337" l="323" n="association_delete()" t="F" v="pub"/>
+<Fct c="10" el="321" l="297" n="association_update()" t="F" v="pub"/>
+<Fct c="10" el="295" l="282" n="association_insert()" t="F" v="pub"/>
+<Fct c="10" el="280" l="195" n="association_input_clg(au_flag CHAR(20))" t="F" v="pub"/>
+<Fct c="10" el="193" l="191" n="association_display()" t="F" v="pub"/>
+<Fct c="10" el="189" l="171" n="association_fetch_rel(p_fetch_flag SMALLINT)" t="F" v="pub">
+<Call c="10" l="177" n="association_fetch_cust" t="F"/>
+<Call c="14" l="180" n="association_display" t="F"/>
+</Fct>
+<Fct c="10" el="169" l="144" n="association_fetch_cust(p_fetch_flag SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="142" l="122" n="association_cut_select(p_where_clause STRING)" t="F" v="pub">
+<Call c="10" l="133" n="association_fetch_cust" t="F"/>
+</Fct>
+<Fct c="10" el="120" l="98" n="association_get_cust_cnt(p_where_clause STRING)" t="F" v="pub"/>
+<Fct c="10" el="96" l="61" n="association_query()" t="F" v="pub">
+<Call c="14" l="80" n="association_get_cust_cnt" t="F"/>
+<Call c="18" l="83" n="association_cut_select" t="F"/>
+<Call c="14" l="91" n="association_display" t="F"/>
+</Fct>
+<Fct c="10" el="58" l="17" n="fun_association()" t="F" v="pub">
+<Call c="18" l="23" n="association_query" t="F"/>
+<Call c="22" l="26" n="association_fetch_rel" t="F"/>
+<Call c="22" l="33" n="association_fetch_rel" t="F"/>
+<Call c="11" l="39" n="association_input_clg" t="F"/>
+<Call c="18" l="40" n="association_insert" t="F"/>
+<Call c="18" l="44" n="association_update" t="F"/>
+<Call c="13" l="47" n="association_delete_check" t="F"/>
+<Call c="18" l="48" n="association_delete" t="F"/>
+<Call c="18" l="55" n="association_report" t="F"/>
+</Fct>
+<Fct c="10" el="15" l="9" n="association_fun()" t="F" v="pub">
+<Call c="14" l="12" n="fun_association" t="F"/>
+</Fct>
+</File>
+<File n="helpdesk.4gl" s="2" ts="20210805200205658">
+<Fct c="8" el="461" l="430" n="hpreport(printi2genrec RECORD)" t="R" v="pub"/>
+<Fct c="10" el="428" l="399" n="helpdesk_report()" t="F" v="pub">
+<Call c="10" l="405" n="fgl_report_LoadCurrentSettings" t="F"/>
+<Call c="14" l="406" n="fgl_report_SelectDevice" t="F"/>
+<Call c="14" l="407" n="fgl_report_SelectPreview" t="F"/>
+<Call c="20" l="408" n="fgl_report_commitCurrentSettings" t="F"/>
+<Call c="18" l="414" n="hpreport" t="R"/>
+<Call c="26" l="422" n="hpreport" t="R"/>
+<Call c="19" l="426" n="hpreport" t="R"/>
+</Fct>
+<Fct c="10" el="398" l="391" n="helpdesk_clean_up()" t="F" v="pub"/>
+<Fct c="10" el="389" l="361" n="helpdesk_delete_check()" t="F" v="pub"/>
+<Fct c="10" el="359" l="345" n="helpdesk_delete()" t="F" v="pub"/>
+<Fct c="10" el="343" l="315" n="helpdesk_update()" t="F" v="pub"/>
+<Fct c="10" el="313" l="300" n="helpdesk_insert()" t="F" v="pub"/>
+<Fct c="10" el="298" l="195" n="helpdesk_input_clg(au_flag CHAR(20))" t="F" v="pub"/>
+<Fct c="10" el="193" l="191" n="helpdesk_display()" t="F" v="pub"/>
+<Fct c="10" el="189" l="171" n="helpdesk_fetch_rel(p_fetch_flag SMALLINT)" t="F" v="pub">
+<Call c="10" l="177" n="helpdesk_fetch_cust" t="F"/>
+<Call c="14" l="180" n="helpdesk_display" t="F"/>
+</Fct>
+<Fct c="10" el="169" l="144" n="helpdesk_fetch_cust(p_fetch_flag SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="142" l="122" n="helpdesk_cust_select(p_where_clause STRING)" t="F" v="pub">
+<Call c="10" l="133" n="helpdesk_fetch_cust" t="F"/>
+</Fct>
+<Fct c="10" el="120" l="98" n="helpdesk_get_cust_cnt(p_where_clause STRING)" t="F" v="pub"/>
+<Fct c="10" el="96" l="61" n="helpdesk_query()" t="F" v="pub">
+<Call c="14" l="80" n="helpdesk_get_cust_cnt" t="F"/>
+<Call c="18" l="83" n="helpdesk_cust_select" t="F"/>
+<Call c="14" l="91" n="helpdesk_display" t="F"/>
+</Fct>
+<Fct c="10" el="58" l="17" n="fun_helpdesk()" t="F" v="pub">
+<Call c="18" l="23" n="helpdesk_query" t="F"/>
+<Call c="22" l="26" n="helpdesk_fetch_rel" t="F"/>
+<Call c="22" l="33" n="helpdesk_fetch_rel" t="F"/>
+<Call c="11" l="39" n="helpdesk_input_clg" t="F"/>
+<Call c="18" l="40" n="helpdesk_insert" t="F"/>
+<Call c="18" l="44" n="helpdesk_update" t="F"/>
+<Call c="13" l="47" n="helpdesk_delete_check" t="F"/>
+<Call c="18" l="48" n="helpdesk_delete" t="F"/>
+<Call c="18" l="55" n="helpdesk_report" t="F"/>
+</Fct>
+<Fct c="10" el="15" l="9" n="helpdesk_fun()" t="F" v="pub">
+<Call c="14" l="12" n="fun_helpdesk" t="F"/>
+</Fct>
+</File>
+<File n="owner.4gl" s="2" ts="20210805202147686">
+<Fct c="8" el="436" l="404" n="owreport(printi2genrec RECORD)" t="R" v="pub"/>
+<Fct c="10" el="402" l="373" n="owner_report()" t="F" v="pub">
+<Call c="10" l="379" n="fgl_report_LoadCurrentSettings" t="F"/>
+<Call c="14" l="380" n="fgl_report_SelectDevice" t="F"/>
+<Call c="14" l="381" n="fgl_report_SelectPreview" t="F"/>
+<Call c="20" l="382" n="fgl_report_commitCurrentSettings" t="F"/>
+<Call c="18" l="388" n="owreport" t="R"/>
+<Call c="26" l="396" n="owreport" t="R"/>
+<Call c="19" l="400" n="owreport" t="R"/>
+</Fct>
+<Fct c="10" el="372" l="365" n="owner_clean_up()" t="F" v="pub"/>
+<Fct c="10" el="363" l="335" n="owner_delete_check()" t="F" v="pub"/>
+<Fct c="10" el="333" l="319" n="owner_delete()" t="F" v="pub"/>
+<Fct c="10" el="317" l="292" n="owner_update()" t="F" v="pub"/>
+<Fct c="10" el="290" l="277" n="owner_insert()" t="F" v="pub"/>
+<Fct c="10" el="275" l="195" n="owner_input_clg(au_flag CHAR(20))" t="F" v="pub"/>
+<Fct c="10" el="193" l="191" n="owner_display()" t="F" v="pub"/>
+<Fct c="10" el="189" l="171" n="owner_fetch_rel(p_fetch_flag SMALLINT)" t="F" v="pub">
+<Call c="10" l="177" n="owner_fetch_cust" t="F"/>
+<Call c="14" l="180" n="owner_display" t="F"/>
+</Fct>
+<Fct c="10" el="169" l="144" n="owner_fetch_cust(p_fetch_flag SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="142" l="122" n="owner_cust_select(p_where_clause STRING)" t="F" v="pub">
+<Call c="10" l="133" n="owner_fetch_cust" t="F"/>
+</Fct>
+<Fct c="10" el="120" l="98" n="owner_get_cust_cnt(p_where_clause STRING)" t="F" v="pub"/>
+<Fct c="10" el="96" l="61" n="owner_query()" t="F" v="pub">
+<Call c="14" l="80" n="owner_get_cust_cnt" t="F"/>
+<Call c="18" l="83" n="owner_cust_select" t="F"/>
+<Call c="14" l="91" n="owner_display" t="F"/>
+</Fct>
+<Fct c="10" el="58" l="17" n="fun_owner()" t="F" v="pub">
+<Call c="18" l="23" n="owner_query" t="F"/>
+<Call c="22" l="26" n="owner_fetch_rel" t="F"/>
+<Call c="22" l="33" n="owner_fetch_rel" t="F"/>
+<Call c="11" l="39" n="owner_input_clg" t="F"/>
+<Call c="18" l="40" n="owner_insert" t="F"/>
+<Call c="18" l="44" n="owner_update" t="F"/>
+<Call c="13" l="47" n="owner_delete_check" t="F"/>
+<Call c="18" l="48" n="owner_delete" t="F"/>
+<Call c="18" l="55" n="owner_report" t="F"/>
+</Fct>
+<Fct c="10" el="15" l="9" n="owner_fun()" t="F" v="pub">
+<Call c="14" l="12" n="fun_owner" t="F"/>
+</Fct>
+</File>
+<File n="payment.4gl" s="2" ts="20210805203702869">
+<Fct c="8" el="455" l="424" n="payreport(printi2genrec RECORD)" t="R" v="pub"/>
+<Fct c="11" el="422" l="393" n="payment_report()" t="F" v="pub">
+<Call c="10" l="399" n="fgl_report_LoadCurrentSettings" t="F"/>
+<Call c="14" l="400" n="fgl_report_SelectDevice" t="F"/>
+<Call c="14" l="401" n="fgl_report_SelectPreview" t="F"/>
+<Call c="20" l="402" n="fgl_report_commitCurrentSettings" t="F"/>
+<Call c="18" l="408" n="payreport" t="R"/>
+<Call c="26" l="416" n="payreport" t="R"/>
+<Call c="19" l="420" n="payreport" t="R"/>
+</Fct>
+<Fct c="10" el="391" l="384" n="payment_clean_up()" t="F" v="pub"/>
+<Fct c="10" el="382" l="354" n="payment_delete_check()" t="F" v="pub"/>
+<Fct c="10" el="352" l="338" n="payment_delete()" t="F" v="pub"/>
+<Fct c="10" el="336" l="308" n="payment_update()" t="F" v="pub"/>
+<Fct c="10" el="306" l="293" n="payment_insert()" t="F" v="pub"/>
+<Fct c="10" el="291" l="195" n="payment_input_clg(au_flag CHAR(20))" t="F" v="pub"/>
+<Fct c="10" el="193" l="191" n="payment_display()" t="F" v="pub"/>
+<Fct c="10" el="189" l="171" n="payment_fetch_rel(p_fetch_flag SMALLINT)" t="F" v="pub">
+<Call c="10" l="177" n="payment_fetch_cust" t="F"/>
+<Call c="14" l="180" n="payment_display" t="F"/>
+</Fct>
+<Fct c="10" el="169" l="144" n="payment_fetch_cust(p_fetch_flag SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="142" l="122" n="payment_cust_select(p_where_clause STRING)" t="F" v="pub">
+<Call c="10" l="133" n="payment_fetch_cust" t="F"/>
+</Fct>
+<Fct c="10" el="120" l="98" n="payment_get_cust_cnt(p_where_clause STRING)" t="F" v="pub"/>
+<Fct c="10" el="96" l="61" n="payment_query()" t="F" v="pub">
+<Call c="14" l="80" n="payment_get_cust_cnt" t="F"/>
+<Call c="18" l="83" n="payment_cust_select" t="F"/>
+<Call c="14" l="91" n="payment_display" t="F"/>
+</Fct>
+<Fct c="10" el="58" l="17" n="fun_payment()" t="F" v="pub">
+<Call c="18" l="23" n="payment_query" t="F"/>
+<Call c="22" l="26" n="payment_fetch_rel" t="F"/>
+<Call c="22" l="33" n="payment_fetch_rel" t="F"/>
+<Call c="11" l="39" n="payment_input_clg" t="F"/>
+<Call c="18" l="40" n="payment_insert" t="F"/>
+<Call c="18" l="44" n="payment_update" t="F"/>
+<Call c="13" l="47" n="payment_delete_check" t="F"/>
+<Call c="18" l="48" n="payment_delete" t="F"/>
+<Call c="18" l="55" n="payment_report" t="F"/>
+</Fct>
+<Fct c="10" el="15" l="9" n="payment_fun()" t="F" v="pub">
+<Call c="14" l="12" n="fun_payment" t="F"/>
+</Fct>
+</File>
+<File n="tanent.4gl" s="2" ts="20210805204950737">
+<Fct c="8" el="435" l="404" n="treport(printi2genrec RECORD)" t="R" v="pub"/>
+<Fct c="10" el="402" l="373" n="tanent_report()" t="F" v="pub">
+<Call c="10" l="379" n="fgl_report_LoadCurrentSettings" t="F"/>
+<Call c="14" l="380" n="fgl_report_SelectDevice" t="F"/>
+<Call c="14" l="381" n="fgl_report_SelectPreview" t="F"/>
+<Call c="20" l="382" n="fgl_report_commitCurrentSettings" t="F"/>
+<Call c="18" l="388" n="treport" t="R"/>
+<Call c="26" l="396" n="treport" t="R"/>
+<Call c="19" l="400" n="treport" t="R"/>
+</Fct>
+<Fct c="10" el="372" l="365" n="tanent_clean_up()" t="F" v="pub"/>
+<Fct c="10" el="363" l="335" n="tanent_delete_check()" t="F" v="pub"/>
+<Fct c="10" el="333" l="319" n="tanent_delete()" t="F" v="pub"/>
+<Fct c="10" el="317" l="292" n="tanent_update()" t="F" v="pub"/>
+<Fct c="10" el="290" l="277" n="tanent_insert()" t="F" v="pub"/>
+<Fct c="10" el="275" l="195" n="tanent_input_clg(au_flag CHAR(20))" t="F" v="pub"/>
+<Fct c="10" el="193" l="191" n="tanent_display()" t="F" v="pub"/>
+<Fct c="10" el="189" l="171" n="tanent_fetch_rel(p_fetch_flag SMALLINT)" t="F" v="pub">
+<Call c="10" l="177" n="tanent_fetch_cust" t="F"/>
+<Call c="14" l="180" n="tanent_display" t="F"/>
+</Fct>
+<Fct c="10" el="169" l="144" n="tanent_fetch_cust(p_fetch_flag SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="142" l="122" n="tanent_cust_select(p_where_clause STRING)" t="F" v="pub">
+<Call c="10" l="133" n="tanent_fetch_cust" t="F"/>
+</Fct>
+<Fct c="10" el="120" l="98" n="tanent_get_cust_cnt(p_where_clause STRING)" t="F" v="pub"/>
+<Fct c="10" el="96" l="61" n="tanent_query()" t="F" v="pub">
+<Call c="14" l="80" n="tanent_get_cust_cnt" t="F"/>
+<Call c="18" l="83" n="tanent_cust_select" t="F"/>
+<Call c="14" l="91" n="tanent_display" t="F"/>
+</Fct>
+<Fct c="10" el="58" l="17" n="fun_tanent()" t="F" v="pub">
+<Call c="18" l="23" n="tanent_query" t="F"/>
+<Call c="22" l="26" n="tanent_fetch_rel" t="F"/>
+<Call c="22" l="33" n="tanent_fetch_rel" t="F"/>
+<Call c="11" l="39" n="tanent_input_clg" t="F"/>
+<Call c="18" l="40" n="tanent_insert" t="F"/>
+<Call c="18" l="44" n="tanent_update" t="F"/>
+<Call c="13" l="47" n="tanent_delete_check" t="F"/>
+<Call c="18" l="48" n="tanent_delete" t="F"/>
+<Call c="18" l="55" n="tanent_report" t="F"/>
+</Fct>
+<Fct c="10" el="15" l="9" n="tanent_fun()" t="F" v="pub">
+<Call c="14" l="12" n="fun_tanent" t="F"/>
+</Fct>
+</File>
+<File n="transcation.4gl" s="2" ts="20210806102641517">
+<Fct c="8" el="226" l="199" n="trreport(printi2genrec RECORD)" t="R" v="pub"/>
+<Fct c="10" el="197" l="163" n="trans_report()" t="F" v="pub">
+<Call c="8" l="173" n="fgl_report_loadcurrentsettings" t="F"/>
+<Call c="14" l="174" n="fgl_report_selectdevice" t="F"/>
+<Call c="14" l="175" n="fgl_report_selectpreview" t="F"/>
+<Call c="20" l="176" n="fgl_report_commitcurrentsettings" t="F"/>
+<Call c="18" l="182" n="trreport" t="R"/>
+<Call c="26" l="191" n="trreport" t="R"/>
+<Call c="19" l="195" n="trreport" t="R"/>
+</Fct>
+<Fct c="10" el="161" l="147" n="trans_displayarr()" t="F" v="pub"/>
+<Fct c="10" el="145" l="143" n="trans_display()" t="F" v="pub"/>
+<Fct c="10" el="141" l="116" n="trans_fetch_cust(p_fetch_flag SMALLINT)" t="F" v="pub"/>
+<Fct c="10" el="114" l="94" n="trans_cust_select(p_where_clause STRING)" t="F" v="pub">
+<Call c="10" l="105" n="trans_fetch_cust" t="F"/>
+</Fct>
+<Fct c="10" el="92" l="70" n="trans_get_cust_cnt(p_where_clause STRING)" t="F" v="pub"/>
+<Fct c="10" el="69" l="34" n="trans_query()" t="F" v="pub">
+<Call c="14" l="53" n="trans_get_cust_cnt" t="F"/>
+<Call c="18" l="56" n="trans_cust_select" t="F"/>
+<Call c="14" l="64" n="trans_display" t="F"/>
+</Fct>
+<Fct c="10" el="31" l="18" n="fun_trans()" t="F" v="pub">
+<Call c="18" l="24" n="trans_query" t="F"/>
+<Call c="13" l="25" n="trans_displayarr" t="F"/>
+<Call c="14" l="29" n="trans_report" t="F"/>
+</Fct>
+<Fct c="10" el="15" l="11" n="trans_fun()" t="F" v="pub">
+<Call c="6" l="13" n="fun_trans" t="F"/>
+</Fct>
+</File>
+<File n="main.4gl" s="2" ts="20210805183054473">
+<Dep t="amenity.4gl"/>
+<Dep t="apartment.4gl"/>
+<Dep t="association.4gl"/>
+<Dep t="helpdesk.4gl"/>
+<Dep t="owner.4gl"/>
+<Dep t="payment.4gl"/>
+<Dep t="tanent.4gl"/>
+<Dep t="transcation.4gl"/>
+<Fct c="1" el="34" l="10" n="main()" t="F" v="pub">
+<Call c="6" i="amenity" l="15" n="amenity_fun" t="F"/>
+<Call c="6" i="apartment" l="17" n="apartment_fun" t="F"/>
+<Call c="6" i="association" l="19" n="association_fun" t="F"/>
+<Call c="6" i="helpdesk" l="21" n="helpdesk_fun" t="F"/>
+<Call c="6" i="owner" l="23" n="owner_fun" t="F"/>
+<Call c="6" i="payment" l="25" n="payment_fun" t="F"/>
+<Call c="6" i="tanent" l="27" n="tanent_fun" t="F"/>
+<Call c="6" i="transcation" l="29" n="trans_fun" t="F"/>
+</Fct>
+</File>
+</WorkspaceDatabase>

@@ -1,0 +1,41 @@
+SCHEMA hrmdb
+TOOLBAR 
+ITEM find(IMAGE="find",TEXT=%"find")
+ITEM next (IMAGE="next",TEXT=%"next")
+ITEM previous (IMAGE="previous",TEXT=%"previous")
+ITEM accept(IMAGE="accept",TEXT=%"accept")
+ITEM cancel(IMAGE="cancel",TEXT=%"cancel")
+ITEM quit(IMAGE="quit",TEXT=%"quit")
+ITEM add(IMAGE="add",TEXT=%"add")
+ITEM update(IMAGE ="update",TEXT =%"update")
+ITEM delete(IMAGE ="delete",TEXT =%"delete")
+END
+ 
+LAYOUT
+GRID 
+{
+ <g                                         ><g                                  >
+ [a2                                       ]  [image2                           ]
+  APARTMENT NAME :[f01                     ]  [                                 ]
+  BLOCK NAME     :[f02                     ]  [                                 ]
+  FLOOR NUMBER   :[f03                     ]  [                                 ]
+  SIZE SQFT      :[f04                     ]  [                                 ]
+  UNIT NUMBER    :[f05                     ]  [                                 ]
+ <                                          ><                                   >
+}
+END 
+END 
+
+TABLES Apartment
+END
+ 
+ATTRIBUTES 
+LABEL a2:a2, TEXT = "APARTMENT DETAILS";
+IMAGE image2:image2, IMAGE = "apartment.jpg";
+EDIT f01 = Apartment.Apartment_name, COMMENTS = "ENTER NAME", PLACEHOLDER = "ENTER NAME";
+EDIT f02 = Apartment.Block_name, COMMENTS = "ENTER BLOCK NAME", PLACEHOLDER = "ENTER BLOCK NAME";
+EDIT f03 = Apartment.floor_no, COMMENTS = "ENTER FLOOR NUMBER", PLACEHOLDER = "ENTER FLOOR NUMBER";
+EDIT f04 = Apartment.Size_sqft, COMMENTS = "ENTER SIZE", PLACEHOLDER = "ENTER SIZE";
+EDIT f05 = Apartment.Unit_number, COMMENTS = "ENTER UNIT NUMBER", PLACEHOLDER = "ENTER UNIT NUMBER";
+END 
+

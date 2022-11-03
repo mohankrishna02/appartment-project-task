@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Schema id="{3a0b165e-0dc6-4a5a-a8b8-47b3661a4648}" version="4.0">
+  <ExtractionSettings last="SQLite">
+    <ExtractionOptions casens="LowerCase" cvmeth="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ignerr="true" systab="false" type="SQLite"/>
+  </ExtractionSettings>
+  <Table name="amenity" isView="false" status="U">
+    <Column fglLength="55" fglType="201" name="amenity_name" notNull="false" order="1" status="U"/>
+    <Column fglLength="55" fglType="201" name="booked_by" notNull="false" order="2" status="U"/>
+    <Column fglLength="4" fglType="2" name="charges" notNull="false" order="3" status="U"/>
+    <Column fglLength="4" fglType="7" name="on_date" notNull="false" order="4" status="U"/>
+    <Column fglLength="55" fglType="201" name="owner_type" notNull="false" order="5" status="U"/>
+    <Column fglLength="1642" fglType="10" name="timing" notNull="false" order="6" status="U"/>
+    <Column fglLength="4" fglType="2" name="unit_number" notNull="false" order="7" status="U"/>
+  </Table>
+  <Table name="apartment" isView="false" status="U">
+    <Column fglLength="55" fglType="201" name="apartment_name" notNull="false" order="1" status="U"/>
+    <Column fglLength="55" fglType="201" name="block_name" notNull="false" order="2" status="U"/>
+    <Column fglLength="4" fglType="2" name="floor_no" notNull="false" order="3" status="U"/>
+    <Column fglLength="8447" fglType="5" name="size_sqft" notNull="false" order="4" status="U"/>
+    <Column fglLength="4" fglType="2" name="unit_number" notNull="false" order="5" status="U"/>
+  </Table>
+  <Table name="association" isView="false" status="U">
+    <Column fglLength="55" fglType="201" name="association_name" notNull="false" order="1" status="U"/>
+    <Column fglLength="55" fglType="201" name="position" notNull="false" order="2" status="U"/>
+    <Column fglLength="55" fglType="201" name="responsbility" notNull="false" order="3" status="U"/>
+    <Column fglLength="4" fglType="2" name="unit_number" notNull="false" order="4" status="U"/>
+  </Table>
+  <Table name="about" isView="false" status="U">
+    <Column fglLength="4" fglType="2" name="id" notNull="false" order="1" status="U"/>
+    <Column fglLength="55" fglType="201" name="name" notNull="false" order="2" status="U"/>
+    <Column fglLength="55" fglType="201" name="city" notNull="false" order="3" status="U"/>
+    <Column fglLength="55" fglType="201" name="state" notNull="false" order="4" status="U"/>
+    <Column fglLength="55" fglType="201" name="address" notNull="false" order="5" status="U"/>
+  </Table>
+  <Table name="company" isView="false" status="U">
+    <Column fglLength="4" fglType="2" name="company_cd" notNull="false" order="1" status="U"/>
+    <Column fglLength="55" fglType="201" name="company_name" notNull="false" order="2" status="U"/>
+    <Column fglLength="55" fglType="201" name="city" notNull="false" order="3" status="U"/>
+    <Column fglLength="55" fglType="201" name="state" notNull="false" order="4" status="U"/>
+    <Column fglLength="55" fglType="201" name="description" notNull="false" order="5" status="U"/>
+  </Table>
+  <Table name="customer" isView="false" status="U">
+    <Column fglLength="4" fglType="2" name="store_nu" notNull="false" order="1" status="U"/>
+    <Column fglLength="90" fglType="201" name="store_name" notNull="false" order="2" status="U"/>
+    <Column fglLength="90" fglType="201" name="add_1" notNull="false" order="3" status="U"/>
+    <Column fglLength="90" fglType="201" name="add_2" notNull="false" order="4" status="U"/>
+    <Column fglLength="90" fglType="201" name="city" notNull="false" order="5" status="U"/>
+    <Column fglLength="90" fglType="201" name="state" notNull="false" order="6" status="U"/>
+    <Column fglLength="4" fglType="2" name="zipcode" notNull="false" order="7" status="U"/>
+    <Column fglLength="8" fglType="52" name="ph_num" notNull="false" order="8" status="U"/>
+    <Index indexColumns="store_nu" indexConstraint="primaryKey" name="sqlite_autoindex_customer_1" status="U"/>
+  </Table>
+  <Table name="department" isView="false" status="U">
+    <Column fglLength="4" fglType="2" name="department_cd" notNull="false" order="1" status="U"/>
+    <Column fglLength="55" fglType="201" name="department_name" notNull="false" order="2" status="U"/>
+    <Column fglLength="55" fglType="201" name="dept_long_desc" notNull="false" order="3" status="U"/>
+  </Table>
+  <Table name="details" isView="false" status="U">
+    <Column fglLength="4" fglType="2" name="id1" notNull="false" order="1" status="U"/>
+    <Column fglLength="55" fglType="201" name="col_name" notNull="false" order="2" status="U"/>
+    <Column fglLength="55" fglType="201" name="country" notNull="false" order="3" status="U"/>
+  </Table>
+  <Table name="employee" isView="false" status="U">
+    <Column fglLength="4" fglType="2" name="employee_cd" notNull="false" order="1" status="U"/>
+    <Column fglLength="55" fglType="201" name="employee_name" notNull="false" order="2" status="U"/>
+    <Column fglLength="4" fglType="2" name="department_cd" notNull="false" order="3" status="U"/>
+    <Column fglLength="4" fglType="2" name="project_cd" notNull="false" order="4" status="U"/>
+    <Column fglLength="55" fglType="201" name="position" notNull="false" order="5" status="U"/>
+    <Column fglLength="55" fglType="201" name="address" notNull="false" order="6" status="U"/>
+    <Column fglLength="4" fglType="7" name="date_of_birth" notNull="false" order="7" status="U"/>
+    <Column fglLength="4" fglType="2" name="phone_no" notNull="false" order="8" status="U"/>
+    <Column fglLength="55" fglType="201" name="emp_status" notNull="false" order="9" status="U"/>
+    <Column fglLength="4" fglType="7" name="date_of_join" notNull="false" order="10" status="U"/>
+  </Table>
+  <Table name="helpdesk" isView="false" status="U">
+    <Column fglLength="55" fglType="201" name="attended_by" notNull="false" order="1" status="U"/>
+    <Column fglLength="55" fglType="201" name="complaint_by" notNull="false" order="2" status="U"/>
+    <Column fglLength="55" fglType="201" name="completed_by" notNull="false" order="3" status="U"/>
+    <Column fglLength="55" fglType="201" name="issue" notNull="false" order="4" status="U"/>
+    <Column fglLength="4" fglType="7" name="issue_date" notNull="false" order="5" status="U"/>
+    <Column fglLength="55" fglType="201" name="status" notNull="false" order="6" status="U"/>
+    <Column fglLength="4" fglType="2" name="unit_number" notNull="false" order="7" status="U"/>
+  </Table>
+  <Table name="items" isView="false" status="U">
+    <Column fglLength="4" fglType="2" name="order_num" notNull="false" order="1" status="U"/>
+    <Column fglLength="4" fglType="258" name="stock_num" notNull="true" order="2" status="U"/>
+    <Column fglLength="4" fglType="2" name="quantity" notNull="false" order="3" status="U"/>
+    <Column fglLength="2306" fglType="5" name="price" notNull="false" order="4" status="U"/>
+    <Index indexColumns="stock_num" indexConstraint="primaryKey" name="sqlite_autoindex_items_1" status="U"/>
+  </Table>
+  <Table name="orders" isView="false" status="U">
+    <Column fglLength="4" fglType="2" name="order_num" notNull="false" order="1" status="U"/>
+    <Column fglLength="4" fglType="7" name="order_date" notNull="false" order="2" status="U"/>
+    <Column fglLength="4" fglType="2" name="store_num" notNull="false" order="3" status="U"/>
+    <Column fglLength="50" fglType="201" name="fac_code" notNull="false" order="4" status="U"/>
+    <Column fglLength="90" fglType="201" name="ship_instr" notNull="false" order="5" status="U"/>
+    <Column fglLength="90" fglType="201" name="promo" notNull="false" order="6" status="U"/>
+    <Index indexColumns="order_num" indexConstraint="primaryKey" name="sqlite_autoindex_orders_1" status="U"/>
+  </Table>
+  <Table name="owner" isView="false" status="U">
+    <Column fglLength="55" fglType="201" name="owner_name" notNull="false" order="1" status="U"/>
+    <Column fglLength="4" fglType="2" name="unit_number" notNull="false" order="2" status="U"/>
+    <Column fglLength="55" fglType="201" name="address" notNull="false" order="3" status="U"/>
+    <Column fglLength="4" fglType="7" name="purchased_on" notNull="false" order="4" status="U"/>
+    <Column fglLength="8447" fglType="5" name="size_sqft" notNull="false" order="5" status="U"/>
+    <Index indexColumns="unit_number" indexConstraint="primaryKey" name="sqlite_autoindex_owner_1" status="U"/>
+  </Table>
+  <Table name="payment" isView="false" status="U">
+    <Column fglLength="55" fglType="201" name="payment_type" notNull="false" order="1" status="U"/>
+    <Column fglLength="4" fglType="2" name="unit_number" notNull="false" order="2" status="U"/>
+    <Column fglLength="4" fglType="7" name="paid_date" notNull="false" order="3" status="U"/>
+    <Column fglLength="55" fglType="201" name="paid_for" notNull="false" order="4" status="U"/>
+    <Column fglLength="4" fglType="2" name="amount" notNull="false" order="5" status="U"/>
+    <Column fglLength="55" fglType="201" name="paid_by" notNull="false" order="6" status="U"/>
+    <Column fglLength="55" fglType="201" name="collected_by" notNull="false" order="7" status="U"/>
+    <Column fglLength="55" fglType="201" name="remarks" notNull="false" order="8" status="U"/>
+  </Table>
+  <Table name="project" isView="false" status="U">
+    <Column fglLength="4" fglType="2" name="project_cd" notNull="false" order="1" status="U"/>
+    <Column fglLength="55" fglType="201" name="project_name" notNull="false" order="2" status="U"/>
+    <Column fglLength="55" fglType="201" name="client_name" notNull="false" order="3" status="U"/>
+    <Column fglLength="55" fglType="201" name="project_type" notNull="false" order="4" status="U"/>
+    <Column fglLength="4" fglType="2" name="department_cd" notNull="false" order="5" status="U"/>
+    <Column fglLength="4" fglType="7" name="assigned_date" notNull="false" order="6" status="U"/>
+    <Column fglLength="4" fglType="7" name="delivery_date" notNull="false" order="7" status="U"/>
+    <Column fglLength="55" fglType="201" name="project_manager" notNull="false" order="8" status="U"/>
+    <Column fglLength="55" fglType="201" name="team_leader" notNull="false" order="9" status="U"/>
+    <Column fglLength="55" fglType="201" name="status" notNull="false" order="10" status="U"/>
+  </Table>
+  <Table name="stock" isView="false" status="U">
+    <Column fglLength="4" fglType="2" name="stock_nm" notNull="false" order="1" status="U"/>
+    <Column fglLength="4" fglType="2" name="fac_code" notNull="false" order="2" status="U"/>
+    <Column fglLength="90" fglType="201" name="description" notNull="false" order="3" status="U"/>
+    <Column fglLength="2306" fglType="5" name="reg_price" notNull="false" order="4" status="U"/>
+    <Column fglLength="2306" fglType="5" name="promo_price" notNull="false" order="5" status="U"/>
+    <Column fglLength="4" fglType="2" name="price_update" notNull="false" order="6" status="U"/>
+    <Column fglLength="4" fglType="2" name="unit" notNull="false" order="7" status="U"/>
+  </Table>
+  <Table name="student" isView="false" status="U">
+    <Column fglLength="4" fglType="2" name="std_id" notNull="false" order="1" status="U"/>
+    <Column fglLength="255" fglType="201" name="std_name" notNull="false" order="2" status="U"/>
+    <Column fglLength="4" fglType="7" name="dob" notNull="false" order="3" status="U"/>
+    <Column fglLength="255" fglType="201" name="gender" notNull="false" order="4" status="U"/>
+    <Column fglLength="255" fglType="201" name="branch" notNull="false" order="5" status="U"/>
+    <Column fglLength="255" fglType="201" name="adress" notNull="false" order="6" status="U"/>
+    <Column fglLength="255" fglType="201" name="city" notNull="false" order="7" status="U"/>
+    <Column fglLength="255" fglType="201" name="state" notNull="false" order="8" status="U"/>
+  </Table>
+  <Table name="tanent" isView="false" status="U">
+    <Column fglLength="55" fglType="201" name="tanen_name" notNull="false" order="1" status="U"/>
+    <Column fglLength="4" fglType="2" name="unit_number1" notNull="false" order="2" status="U"/>
+    <Column fglLength="55" fglType="201" name="address" notNull="false" order="3" status="U"/>
+    <Column fglLength="4" fglType="7" name="join_on" notNull="false" order="4" status="U"/>
+    <Column fglLength="8447" fglType="5" name="size_sqft" notNull="false" order="5" status="U"/>
+  </Table>
+  <Table name="training" isView="false" status="U">
+    <Column fglLength="4" fglType="2" name="training_cd" notNull="false" order="1" status="U"/>
+    <Column fglLength="55" fglType="201" name="training_name" notNull="false" order="2" status="U"/>
+    <Column fglLength="55" fglType="201" name="trainee_name" notNull="false" order="3" status="U"/>
+    <Column fglLength="4" fglType="2" name="course_period" notNull="false" order="4" status="U"/>
+    <Column fglLength="4" fglType="7" name="start_date" notNull="false" order="5" status="U"/>
+    <Column fglLength="4" fglType="7" name="end_date" notNull="false" order="6" status="U"/>
+    <Column fglLength="4" fglType="2" name="max_trainees" notNull="false" order="7" status="U"/>
+    <Column fglLength="55" fglType="201" name="status" notNull="false" order="8" status="U"/>
+  </Table>
+  <ForeignKey cascadeDelete="false" fkColumns="order_num" fkRefColumns="order_num" name="fk_items_orders_0" refTable="orders" status="U" table="items"/>
+  <ForeignKey cascadeDelete="false" fkColumns="store_num" fkRefColumns="store_nu" name="fk_orders_customer_0" refTable="customer" status="U" table="orders"/>
+  <ForeignKey cascadeDelete="false" fkColumns="stock_nm" fkRefColumns="stock_num" name="fk_stock_items_0" refTable="items" status="U" table="stock"/>
+  <ForeignKey cascadeDelete="false" fkColumns="unit_number1" fkRefColumns="unit_number" name="fk_tanent_owner_0" refTable="owner" status="U" table="tanent"/>
+</Schema>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?PipeConfiguratorStyleSheet reportFileName="amenityreport.4rp" outputDevice="PDF" localizationExecutableName="Application" localizationFourRpName="amenityreport" fglppid="LAPTOP-53AS7LHR:13532" fglfeid="{dc2dc2e2-7f0b-a73c-4bbe-e6bc15d9e6a3}" clientHost="127.0.0.1" clientPort="53164" debugLevel="9" preview="false" outputFileName="C:\Users\PMOHAN~1\AppData\Local\Temp/58595FA9-5DE2-48B7-BB28-6A097F2C3C31.pdf"?>
+<Report name="amenity.amreport" headerLength="0" trailerLength="0" pageLength="66" topMargin="3" bottomMargin="3" leftMargin="5" rightMargin="132" xmlns="http://www.4js.com/2004/REPORT">
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <PageHeader pageNo="1"/>
+    <OnEveryRow>
+        <Print>
+            <Item name="printi2genrec.amenity_name" type="VARCHAR(55)" value="anon"/>
+        </Print>
+        <Print>
+            <Item name="printi2genrec.booked_by" type="VARCHAR(55)" value="mohan"/>
+        </Print>
+        <Print>
+            <Item name="printi2genrec.charges" type="INTEGER" value="        560" isoValue="560"/>
+        </Print>
+        <Print>
+            <Item name="printi2genrec.on_date" type="DATE" value="07/07/2021" isoValue="2021-07-07"/>
+        </Print>
+        <Print>
+            <Item name="printi2genrec.owner_type" type="VARCHAR(55)" value="private"/>
+        </Print>
+        <Print>
+            <Item name="printi2genrec.timing" type="DATETIME HOUR TO SECOND" value="19:30:56" isoValue="1900-01-01 19:30:56.00000"/>
+        </Print>
+        <Print>
+            <Item name="printi2genrec.unit_number" type="INTEGER" value="          1" isoValue="1"/>
+        </Print>
+    </OnEveryRow>
+    <OnEveryRow>
+        <Print>
+            <Item name="printi2genrec.amenity_name" type="VARCHAR(55)" value="doge"/>
+        </Print>
+        <Print>
+            <Item name="printi2genrec.booked_by" type="VARCHAR(55)" value="akhil"/>
+        </Print>
+        <Print>
+            <Item name="printi2genrec.charges" type="INTEGER" value="        700" isoValue="700"/>
+        </Print>
+        <Print>
+            <Item name="printi2genrec.on_date" type="DATE" value="08/05/2021" isoValue="2021-08-05"/>
+        </Print>
+        <Print>
+            <Item name="printi2genrec.owner_type" type="VARCHAR(55)" value="public"/>
+        </Print>
+        <Print>
+            <Item name="printi2genrec.timing" type="DATETIME HOUR TO SECOND" value="17:25:30" isoValue="1900-01-01 17:25:30.00000"/>
+        </Print>
+        <Print>
+            <Item name="printi2genrec.unit_number" type="INTEGER" value="          2" isoValue="2"/>
+        </Print>
+    </OnEveryRow>
+    <OnLastRow/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <Skip/>
+    <PageTrailer/>
+</Report>

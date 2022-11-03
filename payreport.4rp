@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report:Report xmlns:rtl="http://www.4js.com/2004/RTL" xmlns:report="http://www.4js.com/2007/REPORT" xmlns="http://www.4js.com/2004/PXML" gstVersion="31408" version="6.00">
+    <report:Settings RWPageWidth="a4width" RWPageLength="a4length" RWLeftMargin="1.3cm" RWTopMargin="1.3cm" RWRightMargin="1.3cm" RWBottomMargin="1.3cm">
+        <report:FormatList>
+            <report:Format-SVG/>
+            <report:Format-PDF/>
+            <report:Format-image/>
+        </report:FormatList>
+    </report:Settings>
+    <report:Data RWDataLocation="payment.rdd" RWFglReportName="payreport"/>
+    <report:Conflicts/>
+    <rtl:stylesheet>
+        <PXML>
+            <rtl:match name="Report" nameConstraint="Report" minOccurs="1" maxOccurs="1">
+                <MINIPAGE name="Page Root" width="max" length="max" bgColor="#00aaff" fontBold="true">
+                    <LAYOUTNODE name="Page Header" width="max" length="min" port="anyPageHeader">
+                        <MINIPAGE name="StripeLayouter3" width="min" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Report Title" x="2.0266" y="max*0.5013" anchorX="0" anchorY="0.5" alignment="baseline" bgColor="#aaaaff" fontSize="25" fontItalic="true" baselineType="leftleft" floatingBehavior="enclosed" text="PAYMENT DETAILS"/>
+                            <PAGENOBOX name="PageNoBox" x="1.23857" y="max" anchorX="0" anchorY="1" alignment="baseline" baselineType="leftleft" floatingBehavior="enclosed" textAlignment="right"/>
+                            <IMAGEBOX name="ImageBox" x="3.9479" y="25.1418" width="20.4" length="20.4" anchorX="0" anchorY="0" floatingBehavior="enclosed" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" intendedResolution="120"/>
+                            <IMAGEBOX name="ImageBox1" x="3.9479" y="455.837" width="18.6" length="18.6" anchorX="0" anchorY="0" floatingBehavior="enclosed" url="file:///C:/Users/P%20MOHAN%20KRISHNA/Desktop/I2GEN%20Internship/i2gen.png" intendedResolution="120"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Table Header" class="grwTableHeader" width="58.2" length="max" alignment="near" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <WORDBOX name="printi2genrec.payment_type Title1" class="grwTableStringColumnTitle" x="39.3589" y="9.1436" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Payment Type" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.unit_number Title" class="grwTableNumericColumnTitle" x="39.3589" y="128.238" anchorX="0" anchorY="0" floatingBehavior="enclosed" textAlignment="right" text="Unit Number" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.paid_date Title" class="grwTableDatetimeColumnTitle" x="39.3589" y="245.689" length="17.4" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Paid Date" localizeText="true"/>
+                            <WORDBOX name="printi2genrec.paid_for Title" class="grwTableStringColumnTitle" x="39.3589" y="368.036" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="Paid For" localizeText="true"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Separator" width="1" length="max" bgColor="#000000" layoutDirection="leftToRight"/>
+                    </LAYOUTNODE>
+                    <rtl:match name="OnEveryRow" nameConstraint="OnEveryRow" minOccurs="0" maxOccurs="unbounded">
+                        <MINIPAGE name="Table Row" class="grwTableRow" width="67.8" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Spacer_1" alignment="baseline" baselineType="leftleft" port="itemSeparator" text=" "/>
+                            <rtl:input-variable name="printi2genrec.payment_type" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.payment_type Value" class="grwTableStringColumnValue" x="6.43501" y="9.14361" width="104.4" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.payment_type}}"/>
+                            <rtl:input-variable name="printi2genrec.unit_number" type="FGLNumeric" expectedLocation="expectedHere"/>
+                            <DECIMALFORMATBOX name="printi2genrec.unit_number Value" class="grwTableNumericColumnValue" x="7.3584" y="177.96" width="41.6" anchorX="0" anchorY="1" floatingBehavior="enclosed" textAlignment="right" format="----------#" value="{{printi2genrec.unit_number}}"/>
+                            <rtl:input-variable name="printi2genrec.paid_date" type="FGLString" expectedLocation="expectedHere"/>
+                            <DATEFORMATBOX name="printi2genrec.paid_date Value" class="grwTableDateColumnValue" x="8.3572" y="232.838" anchorX="0" anchorY="0" floatingBehavior="enclosed" value="{{Date.fromIsoValue(printi2genrec.paid_date.isoValue)}}"/>
+                            <rtl:input-variable name="printi2genrec.paid_for" type="FGLString" expectedLocation="expectedHere"/>
+                            <WORDWRAPBOX name="printi2genrec.paid_for Value" class="grwTableStringColumnValue" x="8.3572" y="366.227" width="129" anchorX="0" anchorY="0" floatingBehavior="enclosed" text="{{printi2genrec.paid_for}}"/>
+                        </MINIPAGE>
+                    </rtl:match>
+                </MINIPAGE>
+            </rtl:match>
+        </PXML>
+    </rtl:stylesheet>
+</report:Report>

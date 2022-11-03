@@ -1,0 +1,44 @@
+SCHEMA hrmdb
+LAYOUT 
+VBOX 
+GRID
+{
+ <g                                                   >
+  OWNER NAME      :[f01                 ]
+  UNIT NUMBER     :[f02                 ]
+  ADDRESS         :[f03                 ]
+  PURCHASED ON    :[f04                 ]
+  SIZE SQFT       :[f05                 ]
+ <                                                    >
+}
+END 
+
+TABLE 
+{
+  TANENT NAME    UNIT NUMBER      ADDRESS           JOIN ON       SIZE SQFT
+  [f06         |f07              |f08              |f09           |f10       ]
+}
+
+END 
+END 
+END 
+
+TABLES owner,tanent
+ATTRIBUTES 
+EDIT f01 = owner.owner_name;
+EDIT f02 = owner.unit_number;
+EDIT f03 = owner.address;
+EDIT f04 = owner.purchased_on;
+EDIT f05 = owner.size_sqft;
+
+EDIT f06 = tanent.tanen_name;
+EDIT f07 = tanent.unit_number;
+EDIT f08 = tanent.address;
+EDIT f09 = tanent.join_on;
+EDIT f10 = tanent.size_sqft;
+END 
+
+INSTRUCTIONS 
+SCREEN RECORD mohan(tanent.*)
+
+

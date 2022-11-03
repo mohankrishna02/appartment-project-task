@@ -1,0 +1,39 @@
+SCHEMA hrmdb
+TOOLBAR 
+ITEM find(IMAGE="find",TEXT=%"find")
+ITEM next (IMAGE="next",TEXT=%"next")
+ITEM previous (IMAGE="previous",TEXT=%"previous")
+ITEM accept(IMAGE="accept",TEXT=%"accept")
+ITEM cancel(IMAGE="cancel",TEXT=%"cancel")
+ITEM quit(IMAGE="quit",TEXT=%"quit")
+ITEM add(IMAGE="add",TEXT=%"add")
+ITEM update(IMAGE ="update",TEXT =%"update")
+ITEM delete(IMAGE ="delete",TEXT =%"delete")
+END
+ 
+LAYOUT
+GRID 
+{
+ <g                                           ><g                                   >
+ [a3                                         ]   [image3                           ]
+  ASSOCIATION NAME :[f01                     ]   [                                 ]
+  POSITION         :[f02                     ]   [                                 ]
+  RESPONSBILITY    :[f03                     ]   [                                 ]
+  UNIT NUMBER      :[f04                     ]   [                                 ]
+ <                                            ><                                    >
+}
+END 
+END 
+
+TABLES Association
+END
+ 
+ATTRIBUTES 
+LABEL a3:a3, TEXT = "ASSOCIATION DETAILS";
+IMAGE image3:image3, IMAGE = "association.jpg";
+EDIT f01 = Association.Association_name, COMMENTS = "ENTER ASSOCIATION NAME", PLACEHOLDER = "ENTER ASSOCIATION NAME";
+EDIT f02 = Association.Position, COMMENTS = "ENTER POSOTION", PLACEHOLDER = "ENTER POSITION";
+EDIT f03 = Association.Responsbility, COMMENTS = "ENTER RESPONSBILITY", PLACEHOLDER = "ENTER RESPONSBILITY";
+EDIT f04 = Association.Unit_number, COMMENTS = "ENTER UNIT NUMBER", PLACEHOLDER = "ENTER UNIT NUMBER";
+END 
+

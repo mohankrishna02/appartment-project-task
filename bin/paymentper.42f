@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="paymentper" build="3.20.08" sqlDbName="hrmdb" width="85" height="11">
+  <ToolBar>
+    <ToolBarItem name="find" image="find" text="find">
+      <LStr text="find"/>
+    </ToolBarItem>
+    <ToolBarItem name="next" image="next" text="next">
+      <LStr text="next"/>
+    </ToolBarItem>
+    <ToolBarItem name="previous" image="previous" text="previous">
+      <LStr text="previous"/>
+    </ToolBarItem>
+    <ToolBarItem name="accept" image="accept" text="accept">
+      <LStr text="accept"/>
+    </ToolBarItem>
+    <ToolBarItem name="cancel" image="cancel" text="cancel">
+      <LStr text="cancel"/>
+    </ToolBarItem>
+    <ToolBarItem name="quit" image="quit" text="quit">
+      <LStr text="quit"/>
+    </ToolBarItem>
+    <ToolBarItem name="add" image="add" text="add">
+      <LStr text="add"/>
+    </ToolBarItem>
+    <ToolBarItem name="update" image="update" text="update">
+      <LStr text="update"/>
+    </ToolBarItem>
+    <ToolBarItem name="delete" image="delete" text="delete">
+      <LStr text="delete"/>
+    </ToolBarItem>
+  </ToolBar>
+  <Grid width="85" height="11">
+    <Group posY="0" posX="1" gridWidth="46" gridHeight="11">
+      <Label name="a5" width="43" text="PAYMENT DETAILS" posY="1" posX="1" gridWidth="43"/>
+      <Label text="PAYMENT TYPE" posY="2" posX="1" gridWidth="12"/>
+      <Label text=":" posY="2" posX="18" gridWidth="1"/>
+      <FormField name="payment.payment_type" colName="payment_type" sqlType="VARCHAR(55)" fieldId="0" sqlTabName="payment" tabIndex="1">
+        <RadioGroup width="24" posY="2" posX="20" gridWidth="24">
+          <Item name="DEBIT CARD" text="DEBIT CARD"/>
+          <Item name="CREDIT CARD" text="CREDIT CARD"/>
+          <Item name="UPI" text="UPI"/>
+          <Item name="NET BANKING" text="NET BANKING"/>
+        </RadioGroup>
+      </FormField>
+      <Label text="UNIT NUMBER" posY="3" posX="1" gridWidth="11"/>
+      <Label text=":" posY="3" posX="18" gridWidth="1"/>
+      <FormField name="payment.unit_number" colName="unit_number" sqlType="INTEGER" fieldId="1" sqlTabName="payment" tabIndex="2">
+        <Edit width="24" comment="ENTER NUMBER" placeholder="ENTER NUMBER" posY="3" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="PAID DATE" posY="4" posX="1" gridWidth="9"/>
+      <Label text=":" posY="4" posX="18" gridWidth="1"/>
+      <FormField name="payment.paid_date" colName="paid_date" sqlType="DATE" fieldId="2" sqlTabName="payment" tabIndex="3">
+        <DateEdit width="22" posY="4" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="PAID" posY="5" posX="1" gridWidth="4"/>
+      <Label text=":" posY="5" posX="18" gridWidth="1"/>
+      <FormField name="payment.paid_for" colName="paid_for" sqlType="VARCHAR(55)" fieldId="3" sqlTabName="payment" tabIndex="4">
+        <Edit width="24" comment="ENTER NAME" placeholder="ENTER NAME" posY="5" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="AMOUNT" posY="6" posX="1" gridWidth="6"/>
+      <Label text=":" posY="6" posX="18" gridWidth="1"/>
+      <FormField name="payment.amount" colName="amount" sqlType="INTEGER" fieldId="4" sqlTabName="payment" tabIndex="5">
+        <Edit width="24" comment="ENTER AMOUNT" placeholder="ENTER AMOUNT" posY="6" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="PAID BY" posY="7" posX="1" gridWidth="7"/>
+      <Label text=":" posY="7" posX="18" gridWidth="1"/>
+      <FormField name="payment.paid_by" colName="paid_by" sqlType="VARCHAR(55)" fieldId="5" sqlTabName="payment" tabIndex="6">
+        <Edit width="24" comment="ENTER NAME" placeholder="ENTER NAME" posY="7" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="COLLECTED BY" posY="8" posX="1" gridWidth="12"/>
+      <Label text=":" posY="8" posX="18" gridWidth="1"/>
+      <FormField name="payment.collected_by" colName="collected_by" sqlType="VARCHAR(55)" fieldId="6" sqlTabName="payment" tabIndex="7">
+        <Edit width="24" comment="ENTER NAME" placeholder="ENTER NAME" posY="8" posX="20" gridWidth="24"/>
+      </FormField>
+      <Label text="REMARKS" posY="9" posX="1" gridWidth="7"/>
+      <Label text=":" posY="9" posX="18" gridWidth="1"/>
+      <FormField name="payment.remarks" colName="remarks" sqlType="VARCHAR(55)" fieldId="7" sqlTabName="payment" tabIndex="8">
+        <TextEdit width="24" comment="ENTER REMARKS" placeholder="ENTER REMARKS" wantReturns="1" scroll="1" posY="9" posX="20" gridWidth="24"/>
+      </FormField>
+    </Group>
+    <Group posY="0" posX="47" gridWidth="38" gridHeight="11">
+      <Image name="image5" width="33" height="9" image="payment.jpg" posY="1" posX="3" gridWidth="33" gridHeight="9"/>
+    </Group>
+  </Grid>
+  <RecordView tabName="payment">
+    <Link colName="payment_type" fieldIdRef="0"/>
+    <Link colName="unit_number" fieldIdRef="1"/>
+    <Link colName="paid_date" fieldIdRef="2"/>
+    <Link colName="paid_for" fieldIdRef="3"/>
+    <Link colName="amount" fieldIdRef="4"/>
+    <Link colName="paid_by" fieldIdRef="5"/>
+    <Link colName="collected_by" fieldIdRef="6"/>
+    <Link colName="remarks" fieldIdRef="7"/>
+  </RecordView>
+</Form>

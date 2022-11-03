@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="apartmentper" build="3.20.08" sqlDbName="hrmdb" width="82" height="8">
+  <ToolBar>
+    <ToolBarItem name="find" image="find" text="find">
+      <LStr text="find"/>
+    </ToolBarItem>
+    <ToolBarItem name="next" image="next" text="next">
+      <LStr text="next"/>
+    </ToolBarItem>
+    <ToolBarItem name="previous" image="previous" text="previous">
+      <LStr text="previous"/>
+    </ToolBarItem>
+    <ToolBarItem name="accept" image="accept" text="accept">
+      <LStr text="accept"/>
+    </ToolBarItem>
+    <ToolBarItem name="cancel" image="cancel" text="cancel">
+      <LStr text="cancel"/>
+    </ToolBarItem>
+    <ToolBarItem name="quit" image="quit" text="quit">
+      <LStr text="quit"/>
+    </ToolBarItem>
+    <ToolBarItem name="add" image="add" text="add">
+      <LStr text="add"/>
+    </ToolBarItem>
+    <ToolBarItem name="update" image="update" text="update">
+      <LStr text="update"/>
+    </ToolBarItem>
+    <ToolBarItem name="delete" image="delete" text="delete">
+      <LStr text="delete"/>
+    </ToolBarItem>
+  </ToolBar>
+  <Grid width="82" height="8">
+    <Group posY="0" posX="1" gridWidth="44" gridHeight="8">
+      <Label name="a2" width="41" text="APARTMENT DETAILS" posY="1" posX="1" gridWidth="41"/>
+      <Label text="APARTMENT NAME :" posY="2" posX="1" gridWidth="16"/>
+      <FormField name="apartment.apartment_name" colName="apartment_name" sqlType="VARCHAR(55)" fieldId="0" sqlTabName="apartment" tabIndex="1">
+        <Edit width="24" comment="ENTER NAME" placeholder="ENTER NAME" posY="2" posX="18" gridWidth="24"/>
+      </FormField>
+      <Label text="BLOCK NAME" posY="3" posX="1" gridWidth="10"/>
+      <Label text=":" posY="3" posX="16" gridWidth="1"/>
+      <FormField name="apartment.block_name" colName="block_name" sqlType="VARCHAR(55)" fieldId="1" sqlTabName="apartment" tabIndex="2">
+        <Edit width="24" comment="ENTER BLOCK NAME" placeholder="ENTER BLOCK NAME" posY="3" posX="18" gridWidth="24"/>
+      </FormField>
+      <Label text="FLOOR NUMBER" posY="4" posX="1" gridWidth="12"/>
+      <Label text=":" posY="4" posX="16" gridWidth="1"/>
+      <FormField name="apartment.floor_no" colName="floor_no" sqlType="INTEGER" fieldId="2" sqlTabName="apartment" tabIndex="3">
+        <Edit width="24" comment="ENTER FLOOR NUMBER" placeholder="ENTER FLOOR NUMBER" posY="4" posX="18" gridWidth="24"/>
+      </FormField>
+      <Label text="SIZE SQFT" posY="5" posX="1" gridWidth="9"/>
+      <Label text=":" posY="5" posX="16" gridWidth="1"/>
+      <FormField name="apartment.size_sqft" colName="size_sqft" sqlType="DECIMAL(32)" fieldId="3" sqlTabName="apartment" tabIndex="4">
+        <Edit width="24" comment="ENTER SIZE" placeholder="ENTER SIZE" posY="5" posX="18" gridWidth="24"/>
+      </FormField>
+      <Label text="UNIT NUMBER" posY="6" posX="1" gridWidth="11"/>
+      <Label text=":" posY="6" posX="16" gridWidth="1"/>
+      <FormField name="apartment.unit_number" colName="unit_number" sqlType="INTEGER" fieldId="4" sqlTabName="apartment" tabIndex="5">
+        <Edit width="24" comment="ENTER UNIT NUMBER" placeholder="ENTER UNIT NUMBER" posY="6" posX="18" gridWidth="24"/>
+      </FormField>
+    </Group>
+    <Group posY="0" posX="45" gridWidth="37" gridHeight="8">
+      <Image name="image2" width="33" height="6" image="apartment.jpg" posY="1" posX="2" gridWidth="33" gridHeight="6"/>
+    </Group>
+  </Grid>
+  <RecordView tabName="apartment">
+    <Link colName="apartment_name" fieldIdRef="0"/>
+    <Link colName="block_name" fieldIdRef="1"/>
+    <Link colName="floor_no" fieldIdRef="2"/>
+    <Link colName="size_sqft" fieldIdRef="3"/>
+    <Link colName="unit_number" fieldIdRef="4"/>
+  </RecordView>
+</Form>

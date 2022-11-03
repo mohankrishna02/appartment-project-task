@@ -1,0 +1,53 @@
+SCHEMA hrmdb
+TOOLBAR 
+ITEM find(IMAGE="find",TEXT=%"find")
+ITEM next (IMAGE="next",TEXT=%"next")
+ITEM previous (IMAGE="previous",TEXT=%"previous")
+ITEM accept(IMAGE="accept",TEXT=%"accept")
+ITEM cancel(IMAGE="cancel",TEXT=%"cancel")
+ITEM quit(IMAGE="quit",TEXT=%"quit")
+ITEM add(IMAGE="add",TEXT=%"add")
+ITEM update(IMAGE ="update",TEXT =%"update")
+ITEM delete(IMAGE ="delete",TEXT =%"delete")
+END
+ 
+LAYOUT
+HBOX 
+GRID 
+{
+ [image1]
+}
+END 
+ 
+GRID 
+{
+ <g                                       >
+ [a1                                    ]
+  AMENITY NAME :[f01                     ]
+  BOOKED BY    :[f02                     ]
+  CHARGES      :[f03                     ]
+  ON DATE      :[f04                     ]
+  OWNER TYPE   :[f05                     ]
+  TIMING       :[f06                     ]
+  UNIT NUMBER  :[f07                     ]
+ <                                        >
+}
+END 
+END 
+END 
+
+TABLES Amenity
+END
+ 
+ATTRIBUTES 
+LABEL a1:a1, TEXT = "AMENITY DETAILS";
+IMAGE image1:image2, IMAGE = "amenity.png";
+EDIT f01 = Amenity.Amenity_name, COMMENTS = "ENTER NAME", PLACEHOLDER = "ENTER NAME";
+EDIT f02 = Amenity.Booked_by, COMMENTS = "ENTER BOOKED BY", PLACEHOLDER = "ENTER BOOKED BY";
+EDIT f03 = Amenity.Charges, COMMENTS = "ENTER CHARGES", PLACEHOLDER = "ENTER CHARGES";
+DATEEDIT f04 = Amenity.On_date;
+EDIT f05 = Amenity.Owner_type, COMMENTS = "ENTER OWNER TYPE", PLACEHOLDER = "ENTER OWNER TYPE";
+TIMEEDIT f06 = Amenity.Timing, COMMENTS = "ENTER TIME", PLACEHOLDER = "ENTER TIME";
+EDIT f07 = Amenity.Unit_number, COMMENTS = "ENTER UNIT NUMBER", PLACEHOLDER = "ENTER UNIT NUMBER";
+END 
+

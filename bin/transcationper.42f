@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Form name="transcationper" build="3.20.08" sqlDbName="hrmdb" width="78" height="9">
+  <VBox>
+    <Grid width="55" height="7">
+      <Group posY="0" posX="1" gridWidth="54" gridHeight="7">
+        <Label text="OWNER NAME" posY="1" posX="1" gridWidth="10"/>
+        <Label text=":" posY="1" posX="17" gridWidth="1"/>
+        <FormField name="owner.owner_name" colName="owner_name" sqlType="VARCHAR(55)" fieldId="0" sqlTabName="owner" tabIndex="1">
+          <Edit width="20" posY="1" posX="19" gridWidth="20"/>
+        </FormField>
+        <Label text="UNIT NUMBER" posY="2" posX="1" gridWidth="11"/>
+        <Label text=":" posY="2" posX="17" gridWidth="1"/>
+        <FormField name="owner.unit_number" colName="unit_number" sqlType="INTEGER" fieldId="1" sqlTabName="owner" tabIndex="2">
+          <Edit width="20" posY="2" posX="19" gridWidth="20"/>
+        </FormField>
+        <Label text="ADDRESS" posY="3" posX="1" gridWidth="7"/>
+        <Label text=":" posY="3" posX="17" gridWidth="1"/>
+        <FormField name="owner.address" colName="address" sqlType="VARCHAR(55)" fieldId="2" sqlTabName="owner" tabIndex="3">
+          <Edit width="20" posY="3" posX="19" gridWidth="20"/>
+        </FormField>
+        <Label text="PURCHASED ON" posY="4" posX="1" gridWidth="12"/>
+        <Label text=":" posY="4" posX="17" gridWidth="1"/>
+        <FormField name="owner.purchased_on" colName="purchased_on" sqlType="DATE" fieldId="3" sqlTabName="owner" tabIndex="4">
+          <Edit width="20" posY="4" posX="19" gridWidth="20"/>
+        </FormField>
+        <Label text="SIZE SQFT" posY="5" posX="1" gridWidth="9"/>
+        <Label text=":" posY="5" posX="17" gridWidth="1"/>
+        <FormField name="owner.size_sqft" colName="size_sqft" sqlType="DECIMAL(32)" fieldId="4" sqlTabName="owner" tabIndex="5">
+          <Edit width="20" posY="5" posX="19" gridWidth="20"/>
+        </FormField>
+      </Group>
+    </Grid>
+    <Table pageSize="1" tabName="mohan">
+      <TableColumn text="TANENT NAME" name="tanent.tanen_name" colName="tanen_name" sqlType="VARCHAR(55)" fieldId="5" sqlTabName="tanent" tabIndex="6">
+        <Edit width="12"/>
+      </TableColumn>
+      <TableColumn text="UNIT NUMBER" name="tanent.unit_number" colName="unit_number" sqlType="INTEGER" fieldId="6" sqlTabName="tanent" tabIndex="7" numAlign="1">
+        <Edit width="17"/>
+      </TableColumn>
+      <TableColumn text="ADDRESS" name="tanent.address" colName="address" sqlType="VARCHAR(55)" fieldId="7" sqlTabName="tanent" tabIndex="8">
+        <Edit width="17"/>
+      </TableColumn>
+      <TableColumn text="JOIN ON" name="tanent.join_on" colName="join_on" sqlType="DATE" fieldId="8" sqlTabName="tanent" tabIndex="9">
+        <Edit width="14"/>
+      </TableColumn>
+      <TableColumn text="SIZE SQFT" name="tanent.size_sqft" colName="size_sqft" sqlType="DECIMAL(32)" fieldId="9" sqlTabName="tanent" tabIndex="10" numAlign="1">
+        <Edit width="10"/>
+      </TableColumn>
+    </Table>
+  </VBox>
+  <RecordView tabName="owner">
+    <Link colName="owner_name" fieldIdRef="0"/>
+    <Link colName="unit_number" fieldIdRef="1"/>
+    <Link colName="address" fieldIdRef="2"/>
+    <Link colName="purchased_on" fieldIdRef="3"/>
+    <Link colName="size_sqft" fieldIdRef="4"/>
+  </RecordView>
+  <RecordView tabName="tanent">
+    <Link colName="tanen_name" fieldIdRef="5"/>
+    <Link colName="unit_number" fieldIdRef="6"/>
+    <Link colName="address" fieldIdRef="7"/>
+    <Link colName="join_on" fieldIdRef="8"/>
+    <Link colName="size_sqft" fieldIdRef="9"/>
+  </RecordView>
+</Form>
